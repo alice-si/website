@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Project</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="description of a site">
+  <meta name="keywords" content="many, many, keywords">
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js"></script>
+  <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
+  <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
+  <script>
+    var webpMachine = new webpHero.WebpMachine()
+    webpMachine.polyfillDocument()
+  </script>
+  <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<!-- HEADER -->
+  <header class="page-header main-header">
+    <section class="section-1">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h1 class="visually-hidden section-title">Alice</h1>
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <a href="index.html" class="navbar-brand">
+              <img class="navbar-logo" src="img/section-1/alice-logo-white.webp" width="145" height="45" alt="alice-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="#technology" class="nav-link">Technology</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#applications" class="nav-link">Applications</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#partners" class="nav-link">Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Medium</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Github</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                  <a href="" class="nav-link signUp-link" data-toggle="modal" data-target="#signUpModal">Sign up</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link login-link" data-toggle="modal" data-target="#loginModal">Login</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="overview">
+            <div class="row mx-0">
+              <div class="col-md-6 col-lg-6 col-xl-7 px-0">
+                <h2 class="overview-title">Fund promises.<br>Track impact.</h2>
+                <p class="overview-tagline">
+                  Alice is the Decentralised Finance (DeFi) standard for social funding and impact management.  It manages donors’, investors’, government’s funding and proves, on the Blockchain, what is achieved with their money.
+                </p>
+                <div class="overview-buttons">
+                  <a href="" class="overview-button btn btn-success">Get started</a>
+                  <a href="" class="overview-button btn btn-light">Fund Projects</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-5 d-flex px-0">
+                <div class="overview-image-wrapper">
+                  <img class="overview-image" src="svg/section-1/iPad.svg" width="514" height="350" alt="Graphic on iPad">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+<!-- MAIN -->
+  <main class="page-main">
+    <section class="section-2">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">Our funders: investors and grant-makers</h2>
+          <ul class="investors-and-media-list row justify-content-center justify-content-xl-between align-items-center align-content-lg-start">
+            <li class="investor-and-media-item m-2">
+              <a href="https://coinshares.co.uk/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-2/1.GABI_logo.webp" width="116" height="64" alt="GABI">
+                <span class="visually-hidden investors-and-media-brand">Gabi</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.impactassets.org/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-2/2.ImpactAssets_logo.webp" width="150" height="62" alt="ImpactAssets">
+                <span class="visually-hidden investors-and-media-brand">Impact Assets</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://gnosis.io/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-2/3.Gnosis_logo.webp" width="81" height="49" alt="Gnosis">
+                <span class="visually-hidden investors-and-media-brand">Gnosis</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.gov.uk/government/organisations/innovate-uk" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-2/4.Innovateuk_logo.webp" width="176" height="34" alt="Innovateuk">
+                <span class="visually-hidden investors-and-media-brand">Innovate UK</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://socialtechtrust.org/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-2/5.stt_logo.svg" width="66" height="64" alt="Social Tech Trust">
+                <span class="visually-hidden investors-and-media-brand">Social Tech Trust</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://bethnalgreenventures.com/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-2/6.BGV_logo.webp" width="125" height="39" alt="BGV">
+                <span class="visually-hidden investors-and-media-brand">Bethnal Green Ventures</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.vodafone.com/content/index.html" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-2/7.Vodafone_logo.webp" width="154" height="39" alt="Vodafone">
+                <span class="visually-hidden investors-and-media-brand">Vodafone</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-3" id="technology">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">
+            Decentralised social finance <br> the defi protocol
+          </h2>
+
+          <div class="advantages row">
+            <div class="advantages-item d-flex flex-column d-lg-block">
+              <div class="advantages-icon-wrapper d-flex justify-content-center">
+                <img class="advantages-item-icon transparency-icon" src="svg/Section-3/search-icon.svg" width="50" height="50" alt="Decentralised transparency">
+              </div>
+              <h3 class="advantages-item-title item-title">
+                Decentralised transparency
+              </h3>
+              <p class="advantages-desctiption">
+                Alice manages multiple sources of funding and tracks the achievement of goals transparently on the Blockchain. Citizens, corporates and governments worldwide can see on Alice what is achieved with private and public financing. 
+              </p>
+            </div>
+            <div class="advantages-item d-flex flex-column d-lg-block">
+              <div class="advantages-icon-wrapper d-flex justify-content-center">
+                <img class="advantages-item-icon coordination-icon" src="svg/Section-3/settings-icon.svg" width="41" height="50" alt="Multi-party coordination">
+              </div>
+              <h3 class="advantages-item-title item-title">
+                Multi-party coordination
+              </h3>
+              <p class="advantages-desctiption">
+                All parties are created on Alice’s platform with set payout transactions and information rights.  Alice’s open-source protocol automatically deploys the smart contracts that control these transactions amongst all parties.
+              </p>
+            </div>
+          </div>
+
+          <div class="advantages row">
+            <div class="advantages-item d-flex flex-column d-lg-block">
+              <div class="advantages-icon-wrapper d-flex justify-content-center">
+                <img class="advantages-item-icon governance-icon" src="svg/Section-3/eye-icon.svg" width="54" height="29" alt="Flexible governance">
+              </div>
+              <h3 class="advantages-item-title item-title">
+                Flexible governance
+              </h3>
+              <p class="advantages-desctiption">
+                Social and environmental interventions may change over the course of a programme.  Alice is the first company to build updatable smart-contracts to adjust project terms for all existing and new parties, without requiring new contractual agreements.
+              </p>
+            </div>
+            <div class="advantages-item d-flex flex-column d-lg-block">
+              <div class="advantages-icon-wrapper d-flex justify-content-center">
+                <img class="advantages-item-icon privacy-icon" src="svg/Section-3/lock-icon.svg" width="42" height="50" alt="Privacy and security">
+              </div>
+              <h3 class="advantages-item-title item-title">
+                Privacy and security
+              </h3>
+              <p class="advantages-desctiption">
+                Alice’s protocol securely encrypts and validates evidence of impact and allows parties to assign different access levels to user accounts. This way maximum data protection and security is enabled while minimising manual processing. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-4" id="applications">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">
+            Defi Applications <br> manage payouts - track impact
+          </h2>
+          <div class="alice-management">
+            <div class="row mx-0">
+              <ul class="alice-management-list col-lg-4">
+                <li class="alice-management-item active">
+                  <h4 class="alice-management-title">
+                    <span class="active-line">Impact investment for everyone</span>
+                  </h4>
+                  <p class="alice-management-description">
+                    By automating RoI payouts to Investors and tracking impact on the Blockchain Alice brings impact investing to the masses.
+                  </p>
+                </li>
+
+                <li class="alice-management-item">
+                  <h4 class="alice-management-title">
+                    <span class="active-line">Donations - reinvented</span>
+                  </h4>
+                  <p class="alice-management-description">
+                    Alice manages donations, transfers restricted funds and reports to donors the impact achieved with their money in real-time.
+                  </p>
+                </li>
+
+                <li class="alice-management-item">
+                  <h4 class="alice-management-title">
+                    <span class="active-line">Legal - simplified</span>
+                  </h4>
+                  <p class="alice-management-description">
+                    Alice’s legal engine enables ID verification for all stakeholders and automatically generates legally binding agreements reflecting their transactions.
+                  </p>
+                </li>
+              </ul>
+              <div class="management-image-col col-lg-8 px-0">
+                <div class="management-image-wrapper active">
+                  <img class="management-image impact-investment-image" src="img/section-4/management-1.webp" width="763" height="484" alt="Impact investment for everyone">
+                </div>
+                <div class="management-image-wrapper">
+                  <img class="management-image alice-donations-image" src="img/section-4/management-2.webp" width="763" height="484" alt="Impact investment for everyone">
+                </div>
+                <div class="management-image-wrapper">
+                  <img class="management-image legal-engine-image" src="img/section-4/management-3.webp" width="763" height="484" alt="Impact investment for everyone">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-5" id="partners">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">
+            Our partners
+          </h2>
+          <div class="our-partners">
+            <div class="row mx-0 mb-4">
+              <div class="partner-col col-12 col-lg-6">
+                <a class="partner-link" href="https://gnosis.io/" target="_blank">
+                  <div class="card-img-wrapper">
+                    <div class="partner-logo">
+                      <img class="card-image" src="img/section-5/1.Gnosis_logo.webp" width="128" height="77" alt="Gnosis">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Gnosis - ROI predirections</h5>
+                    <p class="card-text">
+                      Alice secured a grant from Gnosis to tokenise impact investments, based on their conditional token, and to create an investors’ RoI prediction market.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="partner-col col-12 col-lg-6">
+                <a class="partner-link" href="https://www.imperial.ac.uk/" target="_blank">
+                  <div class="card-img-wrapper">
+                    <div class="partner-logo">
+                      <img class="card-image" src="img/section-5/2.ICL_logo.webp" width="121" height="79" alt="ICL">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">ICL - Secure and open ID</h5>
+                    <p class="card-text">
+                      Alice with ICL, secured an Innovate UK grant and created a self-sovereign ID for all parties to allow them to “selectively disclose” their data to others.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row mx-0 mb-4">
+              <div class="partner-col col-12 col-lg-6">
+                <a class="partner-link" href="https://skalelabs.com/" target="_blank">
+                  <div class="card-img-wrapper">
+                    <div class="partner-logo">
+                      <img class="card-image" src="img/section-5/3.Skale_logo.webp" width="128" height="128" alt="Skale">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Skale - Fast tap and pay</h5>
+                    <p class="card-text">
+                      Alice used Skale’s sidechain and won their award, at EthDenver, for Tappy - a tap and pay wallet that allows beneficiaries to self-validate impact.   
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="partner-col col-12 col-lg-6">
+                <a class="partner-link" href="https://www.binance.charity/" target="_blank">
+                  <div class="card-img-wrapper">
+                    <div class="partner-logo">
+                      <img class="card-image" src="img/section-5/4.Binance_charity_logo.webp" width="127" height="90" alt="Binance">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Binance - Transparent impact</h5>
+                    <p class="card-text">
+                      Binance is helping 1m young women live with dignity, offering them sanitary pads. Alice is tracking the impact on their lives validating proof transparently. 
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row mx-0 mb-4">
+              <div class="partner-col col-12 col-lg-6">
+                <a class="partner-link" href="https://www.ashurst.com/" target="_blank">
+                  <div class="card-img-wrapper">
+                    <div class="partner-logo">
+                      <img class="card-image" src="img/section-5/5.Ashurst_logo.webp" width="129" height="100" alt="Ashurst">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Ashurst - New era in legal</h5>
+                    <p class="card-text">
+                      In partnership with Ashurst, Alice automates the creation of legally binding and fully compliant agreements between all stakeholders. 
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="partner-col col-12 col-lg-6">
+                <a class="partner-link" href="https://www.cafonline.org/" target="_blank">
+                  <div class="card-img-wrapper">
+                    <div class="partner-logo">
+                      <img class="card-image" src="img/section-5/6.CAF_logo.webp" width="118" height="74" alt="CAF">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">CAF - Tax exempt funding</h5>
+                    <p class="card-text">
+                      Alice partnered with CAF to manage Income Tax Relief and exemption from Capital Gains Tax for the philanthropic funders on its platform. 
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-6">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">Press and media</h2>
+          <ul class="investors-and-media-list row justify-content-center justify-content-xl-between align-items-center align-content-lg-start">
+
+            <li class="investor-and-media-item m-2">
+              <a href="https://bitcoinmagazine.com/articles/bitcoin-and-blockchain-technology-future-philanthropy" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-6/1.Bitcoin_magazine_logo.webp" width="145" height="31" alt="Bitcoin magazine">
+                <span class="visually-hidden investors-and-media-brand">Bitcoin magazine</span>
+              </a>
+            </li>
+
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.standard.co.uk/tech/google-campus-london-residency-tech-for-good-a3941291.html" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-6/2.ES_logo.webp" width="230" height="30" alt="Evening Standard">
+                <span class="visually-hidden investors-and-media-brand">Evening Standard</span>
+              </a>
+            </li>
+
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.nytimes.com/2017/11/06/business/bitcoin-charity-donations.html" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-6/3.New_York_Times_logo.webp" width="120" height="96" alt="The New York Times">
+                <span class="visually-hidden investors-and-media-brand">The New York Times</span>
+              </a>
+            </li>
+
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.huffingtonpost.co.uk/raphael-mazet/charitable-giving-app_b_10081744.html?guccounter=1" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-6/4.The_Huffington_Post_logo.webp" width="150" height="58" alt="The Huffington Post">
+                <span class="visually-hidden investors-and-media-brand">The Huffington Post</span>
+              </a>
+            </li>
+
+            <li class="investor-and-media-item m-2">
+              <a href="http://methods.sagepub.com/video/srmpromo/m0oxBt/using-blockchain-technology-for-transparent-social-funding-alice" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-6/5.Sage_rm_logo.webp" width="120" height="64" alt="Sage Research Methods">
+                <span class="visually-hidden investors-and-media-brand">Sage Research Methods</span>
+              </a>
+            </li>
+
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.ibtimes.co.uk/ethereum-helping-londons-homeless-st-mungos-smart-contracts-1620724" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-6/6.IBT_logo.webp" width="140" height="62" alt="International Business Times">
+                <span class="visually-hidden investors-and-media-brand">International Business Times</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://blogs.msdn.microsoft.com/uk_faculty_connection/2018/02/19/etheroscope-a-smart-contract-visualiser/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-6/7.ms_dev_logo.svg" width="151" height="32" alt="Microsoft Developer">
+                <span class="visually-hidden investors-and-media-brand">Microsoft Developer</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-7">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">
+            News and community
+          </h2>
+          <div class="row m-0">
+            <div class="col-subscribition col-12 col-md-8 p-0">
+              <h4 class="section-title new-and-community-title">Sign up to our newsletter</h4>
+              <form action="form.php" class="subscribition-form" method="post">
+
+                <div class="input-wrapper">
+                  
+                  <label class="email-label" for="email">Your email address</label>
+                  <input class="input-email" type="email" id="email">
+                </div>
+                <div class="submit-wrapper">
+                  <button class="overview-button btn btn-success btn-submit">Sign up</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-follow-us col-12 col-md-4 p-0">
+              <h4 class="section-title follow-us-title">Follow us</h4>
+                <div class="row m-0 follow-us-icons">
+                    <a class="follow-us-icon medium-icon" href="https://medium.com/alice-si">
+                      <img src="img/section-7/Medium_logo.webp" width="244" height="50" alt="Medium">
+                      <span class="visually-hidden">
+                        Medium
+                      </span>
+                    </a>
+
+                    <a class="follow-us-icon twitter-icon" href="https://twitter.com/alice_si_">
+                      <img src="img/section-7/twitter_logo.webp" width="76" height="63" alt="Medium">
+                      <span class="visually-hidden">
+                        Twitter
+                      </span>
+                    </a>             
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-8">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">Our customers</h2>
+          <ul class="investors-and-media-list row justify-content-around align-items-center align-content-lg-start">
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.mungos.org/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/1.Mungos_logo.webp" width="169" height="61" alt="St Mungo’s">
+                <span class="visually-hidden investors-and-media-brand">St Mungo’s</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://forgottenanimals.org" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/2.FA_logo.webp" width="79" height="79" alt="Forgotten Animals">
+                <span class="visually-hidden investors-and-media-brand">Forgotten Animals</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://theaokc.org/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/3.AOKC_logo.webp" width="87" height="87" alt="AOKC">
+                <span class="visually-hidden investors-and-media-brand">AOKC</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://resonance.ltd.uk/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/4.resonance_logo.svg" width="170" height="68" alt="Resonance">
+                <span class="visually-hidden investors-and-media-brand">Resonance</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.cancerresearchuk.org/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/5.CRUK_logo.webp" width="177" height="68" alt="CRUK">
+                <span class="visually-hidden investors-and-media-brand">CRUK</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-9">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">
+            Let’s work together
+          </h2>
+          <p class="section-tagline">
+            If you are an investor, a social organisation, a private or public funder, <br>
+            please get in touch with your request
+          </p>
+          <div class="work-together">
+            <form class="work-together-form row m-0" action="form.php" method="post">
+              <div class="work-together-col col-12 col-sm-6">
+                <div class="personal-information">
+                  <label class="form-label select-label">I am</label>
+                  <select class="browser-default custom-select who-I-am">
+                    <option value="An Investor">An Investor</option>
+                    <option value="A Charity/NGO">A Charity/NGO</option>
+                    <option value="A grant-making body">A grant-making body</option>
+                    <option value="A local authority/government">A local authority/government</option>
+                  </select>
+                  <label class="form-label full-name-label" for="full-name">
+                    Full-name
+                  </label>
+                  <input class="form-input full-name-input" type="text" name="full-name" id="full-name">
+                </div>
+              </div>
+              <div class="work-together-col col-12 col-sm-6">
+                <div class="interest-information">
+                  <label class="form-label inerested-in-label" for="inerested-in">
+                    I am interested in
+                  </label>
+                  <input class="form-input inerested-in-input" type="text" name="inerested-in" id="inerested-in">
+                  <label class="form-label email-addres-label" for="email-address">
+                    Email address
+                  </label>
+                  <input class="form-input email-input" type="email" name="email-address" id="email-address">
+                </div>
+              </div>
+              <button class="overview-button btn btn-success work-together-submit" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<!-- FOOTER -->
+  <footer class="page-footer">
+    <section class="footer-section">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="visually-hidden section-title">
+            Our contacts
+          </h2>
+          <div class="our-contacts row m-0">
+            <div class="contacts-col col-6 col-md-3">
+              <p class="terms">
+                <a class="terms-links" href="">Terms of Use</a>
+                <a class="terms-links" href="">Privacy Policy</a>
+                <a class="terms-links alice-link" href="">Alice SI Ltd</a>
+              </p>
+            </div>
+            <div class="contacts-col col-6 col-md-3">
+              <span class="contacts-title">Call us</span>
+              <a class="contacts-info" href="tel:+4402081239966">+44 (0) 20 8123 9966</a>
+            </div>
+            <div class="contacts-col col-6 col-md-3">
+              <span class="contacts-title">Email us</span>
+              <a class="contacts-info" href="mailto:alice@alice.si">alice@alice.si</a>
+            </div>
+            <div class="contacts-col col-6 col-md-3">
+              <span class="contacts-title">Visit us</span>
+              <p class="contacts-info">
+                Google Campus <br>
+                4-5 Bonhill Street <br>
+                London EC2A 4BX <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+            <button class="close" type="button" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="container-fluid d-flex justify-content-center">
+              <form action="form.php" class="w-100 p-4">
+                <div class="form-row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="exampleInputEmail">Email address</label>
+                      <input type="email" class="form-control form-control-lg" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
+                      <small class="form-text text-muted" id="emailHelp">Enter your Email</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPass">Password</label>
+                      <input type="password" class="form-control form-control-lg" id="exampleInputPass" placeholder="Password">
+                      <small class="form-text text-muted" id="passHelp">Type your password</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    Remember me
+                  </label>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" crossorigin="anonymous"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
