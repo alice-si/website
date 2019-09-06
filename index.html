@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>New Project</title>
+  <title>Alice</title>
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="description of a site">
   <meta name="keywords" content="many, many, keywords">
   <link rel="stylesheet" href="css/lib/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="js/picturefill.min.js"></script>
+  <script src="js/lib/picturefill.min.js"></script>
   <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
   <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
   <script>
@@ -27,10 +27,10 @@
           <h1 class="visually-hidden section-title">Alice</h1>
           <nav class="navbar navbar-dark navbar-expand-lg">
             <a href="index.html" class="navbar-brand">
-              <img class="navbar-logo" src="img/section-1/alice-logo-white.webp" width="145" height="45" alt="alice-logo">
+              <img class="navbar-logo" src="img/section-1/alice-logo-white.png" width="156" height="55" alt="alice-logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
-              <span class="navbar-toggler-icon"></span>
+              <span class="hamburger"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
@@ -68,7 +68,7 @@
                   Alice is the Decentralised Finance (DeFi) standard for social funding and impact management.  It manages donors’, investors’, government’s funding and proves, on the Blockchain, what is achieved with their money.
                 </p>
                 <div class="overview-buttons">
-                  <a href="" class="overview-button btn btn-success">Get started</a>
+                  <a href="#let-work-togehter" class="overview-button btn btn-success">Get started</a>
                   <a href="" class="overview-button btn btn-light">Fund Projects</a>
                 </div>
               </div>
@@ -128,7 +128,7 @@
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://www.vodafone.com/content/index.html" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-2/7.Vodafone_logo.webp" width="154" height="39" alt="Vodafone">
+                <img class="investor-ans-media-logo" src="img/section-2/7.Vodafone_logo.webp" width="170" height="39" alt="Vodafone">
                 <span class="visually-hidden investors-and-media-brand">Vodafone</span>
               </a>
             </li>
@@ -211,6 +211,10 @@
                   <p class="alice-management-description">
                     By automating RoI payouts to Investors and tracking impact on the Blockchain Alice brings impact investing to the masses.
                   </p>
+                  <picture>
+                    <source media="(min-width: 0px) and (max-width: 992px)" srcset="img/section-4/management-1.png"> 
+                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                  </picture>
                 </li>
 
                 <li class="alice-management-item">
@@ -220,6 +224,10 @@
                   <p class="alice-management-description">
                     Alice manages donations, transfers restricted funds and reports to donors the impact achieved with their money in real-time.
                   </p>
+                  <picture>
+                    <source media="(min-width: 0px) and (max-width: 992px)" srcset="img/section-4/management-2.png"> 
+                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                  </picture>
                 </li>
 
                 <li class="alice-management-item">
@@ -229,17 +237,30 @@
                   <p class="alice-management-description">
                     Alice’s legal engine enables ID verification for all stakeholders and automatically generates legally binding agreements reflecting their transactions.
                   </p>
+                  <picture>
+                    <source media="(min-width: 0px) and (max-width: 992px)" srcset="img/section-4/management-3.png"> 
+                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                  </picture>
                 </li>
               </ul>
               <div class="management-image-col col-lg-8 px-0">
                 <div class="management-image-wrapper active">
-                  <img class="management-image impact-investment-image" src="img/section-4/management-1.webp" width="763" height="484" alt="Impact investment for everyone">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="img/section-4/management-1.png"> 
+                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                  </picture>
                 </div>
                 <div class="management-image-wrapper">
-                  <img class="management-image alice-donations-image" src="img/section-4/management-2.webp" width="763" height="484" alt="Impact investment for everyone">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="img/section-4/management-2.png"> 
+                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                  </picture>    
                 </div>
                 <div class="management-image-wrapper">
-                  <img class="management-image legal-engine-image" src="img/section-4/management-3.webp" width="763" height="484" alt="Impact investment for everyone">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="img/section-4/management-3.png"> 
+                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                  </picture>     
                 </div>
               </div>
             </div>
@@ -499,7 +520,7 @@
         </div>
       </div>
     </section>
-    <section class="section-9">
+    <section class="section-9" id="let-work-togehter">
       <div class="wrapper">
         <div class="container-fluid px-0">
           <h2 class="section-title">
@@ -514,12 +535,20 @@
               <div class="work-together-col col-12 col-sm-6">
                 <div class="personal-information">
                   <label class="form-label select-label">I am</label>
-                  <select class="browser-default custom-select who-I-am">
-                    <option value="An Investor">An Investor</option>
-                    <option value="A Charity/NGO">A Charity/NGO</option>
-                    <option value="A grant-making body">A grant-making body</option>
-                    <option value="A local authority/government">A local authority/government</option>
-                  </select>
+                <div class="dropdown">
+                  <div class="select">
+                    <span class="select-span"></span>
+                    <div class="dropdown-icon dropdown-icon-chevron-left"></div>
+                  </div>
+                  <input type="hidden" name="gender">
+                  <ul class="dropdown-menu">
+                      <li id="An Investor">An Investor</li>
+                      <li id="A Charity/NGO">A Charity/NGO</li>
+                      <li id="A grant-making body">A grant-making body</li>
+                      <li id="A local authority/government">A local authority/government</li>
+                  </ul>
+                </div>
+
                   <label class="form-label full-name-label" for="full-name">
                     Full-name
                   </label>
