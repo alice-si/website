@@ -12,8 +12,14 @@ $ gulp build
 
 ## To push new version of alice.si to github pages
 ```bash
-$ npm run push
+$ rm -rf build
+$ gulp build
+$ cp -r build/ docs/
+$ git add docs
+$ git commit -m "website version update"
+$ git push
 ```
+
 
 ## To watch website on 3000 port (for development)
 ```bash

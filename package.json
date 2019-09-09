@@ -35,8 +35,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "gulp build",
-    "push": "gulp build && cp -r build/ docs/ && git add docs && git commit -m 'new website version' && git push"
+    "prod": "gulp build"
   },
   "browserslist": [
     "since 2015",
