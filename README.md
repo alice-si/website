@@ -10,7 +10,7 @@ $ npm install
 $ gulp build
 ```
 
-## To watch website on 3000 port
+## To watch website on 3000 port (for development)
 ```bash
 $ gulp watch
 ```

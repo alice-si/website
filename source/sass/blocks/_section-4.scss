@@ -203,6 +203,14 @@
   //width: auto;
   height: auto;
 
+  @keyframes image-appears {
+    from { margin-bottom: 80px }
+    to { margin-top: 0 }
+  }
+
+  animation-name: image-appears;
+  animation-duration: 1s;
+
   @media (min-width: 465px) {
     padding-left: 5%;
     padding-right: 5%;
