@@ -10,11 +10,10 @@ $ npm install
 $ gulp build
 ```
 
-## To update alice.si using github pages
+## To push new version of alice.si to github pages
 ```bash
-$ cp -r build docs
+$ npm run push
 ```
-then just commit docs folder and push it to github
 
 ## To watch website on 3000 port (for development)
 ```bash
