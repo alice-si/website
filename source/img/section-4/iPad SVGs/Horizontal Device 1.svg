@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="668px" height="457px" viewBox="0 0 668 457" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>Horizontal Device 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M106.641551,-60.5286474 C106.641551,-85.2873612 126.71601,-105.358264 151.462777,-105.358264 L510.029727,-105.358264 C534.783806,-105.358264 554.850953,-85.2977644 554.850953,-60.5286474 L554.850953,509.576943 C554.850953,534.335657 534.776494,554.40656 510.029727,554.40656 L151.462777,554.40656 C126.708698,554.40656 106.641551,534.34606 106.641551,509.576943 L106.641551,-60.5286474 Z" id="path-1"></path>
+        <filter x="-2.7%" y="-1.2%" width="103.6%" height="102.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-4" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.22 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-3.6%" y="-1.8%" width="105.4%" height="103.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="6" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.899739583   0 0 0 0 0.899739583   0 0 0 0 0.899739583  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M61.607767,18.0505703 C61.607767,15.16654 63.9466543,12.8285714 66.8438408,12.8285714 L594.156159,12.8285714 C597.047963,12.8285714 599.392233,15.176262 599.392233,18.0505703 L599.392233,429.666573 C599.392233,432.550603 597.053346,434.888571 594.156159,434.888571 L66.8438408,434.888571 C63.9520371,434.888571 61.607767,432.540881 61.607767,429.666573 L61.607767,18.0505703 Z" id="path-4"></path>
+    </defs>
+    <g id="Homepage-&amp;-Projects-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Alice.si-for-real" transform="translate(-661.000000, -1925.000000)">
+            <g id="Section-4" transform="translate(124.000000, 1751.000000)">
+                <g id="Content" transform="translate(505.000000, 139.000000)">
+                    <g id="Horizontal-Device-1" transform="translate(35.000000, 35.000000)">
+                        <g id="Rectangle-8" transform="translate(330.746252, 224.524148) rotate(-90.000000) translate(-330.746252, -224.524148) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <path stroke="#F0F0F0" stroke-width="1.34476744" d="M107.313935,-60.5286474 L107.313935,509.576943 C107.313935,533.971124 127.076456,553.734177 151.462777,553.734177 L510.029727,553.734177 C534.407661,553.734177 554.178569,533.961795 554.178569,509.576943 L554.178569,-60.5286474 C554.178569,-84.9228282 534.416048,-104.685881 510.029727,-104.685881 L151.462777,-104.685881 C127.084843,-104.685881 107.313935,-84.9134993 107.313935,-60.5286474 Z" stroke-linejoin="square"></path>
+                        </g>
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <path stroke="#EFF1F5" stroke-width="2" d="M60.607767,18.0505703 C60.607767,14.6119558 63.3966716,11.8285714 66.8438408,11.8285714 L594.156159,11.8285714 C597.596571,11.8285714 600.392233,14.6203044 600.392233,18.0505703 L600.392233,429.666573 C600.392233,433.105187 597.603328,435.888571 594.156159,435.888571 L66.8438408,435.888571 C63.4034294,435.888571 60.607767,433.096838 60.607767,429.666573 L60.607767,18.0505703 Z"></path>
+                        <rect id="Rectangle-1" fill="#FFFFFF" mask="url(#mask-5)" x="52.623301" y="8.98" width="566.021359" height="44.9"></rect>
+                        <rect id="Rectangle-2" fill="#F0F4FA" mask="url(#mask-5)" x="52.623301" y="52.5971429" width="566.021359" height="106.477143"></rect>
+                        <polygon id="Rectangle-3" fill="#FAFBFD" mask="url(#mask-5)" points="52.623301 159.074286 618.64466 159.074286 618.64466 400.251429 52.623301 400.251429"></polygon>
+                        <rect id="Rectangle-4" fill="#FFFFFF" mask="url(#mask-5)" x="52.623301" y="400.251429" width="566.021359" height="48.7485714"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

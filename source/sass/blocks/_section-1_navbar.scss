@@ -1,0 +1,153 @@
+@import "_variables";
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: 768px) {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 30px;
+    padding-top: 0;
+    margin-bottom: 52.5px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 105px;
+  }
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+.navbar-brand {
+  @media (min-width: 1200px) {
+    margin-right: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 84px;
+  }
+}
+
+.navbar-logo {
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.5;
+    transition: all 0.2s;
+  }
+}
+
+.navbar-nav {
+  flex-wrap: wrap;
+}
+
+.navbar-expand-lg .navbar-nav {
+  & .nav-item:first-child .nav-link {
+    margin-left: 0;
+  }
+
+  & .nav-item:last-child .nav-link {
+    //margin-right: 0;
+  }
+
+  & .nav-link {
+    @media (min-width: 992px) {
+      padding: 0;
+      margin: 0 10.75px;
+    }
+
+    @media (min-width: 1200px) {
+      margin: 0 21.5px;
+    }
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $header-color;
+  font-size: 20px;
+  position: relative;
+  transition: all 0.2s;
+
+  @media (max-width: 991px) {
+    display: inline-block;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $header-color-semi;
+    bottom: -4px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  transition: all 0.2s;
+
+  &:hover {
+    color: $header-color-semi;
+  }
+  
+  &::before {
+    background-color: $header-color;
+  }
+
+  &:hover::before {
+    background-color: $header-color-semi;
+    transition: none;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  transition: all 0.2s;
+
+  &::before {
+    opacity: 1;
+    transition: all 0.2s;
+  }
+}
+
+.nav-item.active .nav-link {
+  &::before {
+    opacity: 1;
+    background-color: $header-color;
+  }
+}
+
+.navbar-right {
+  margin-right: 27px;
+}
+
+.navbar-right .nav-item {
+  position: relative;
+
+  @media (min-width: 992px) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 1px;
+      background-color: $header-color;
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+}
+
+//-------------------NAV BAR----------------------

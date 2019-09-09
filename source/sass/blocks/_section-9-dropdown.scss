@@ -1,0 +1,131 @@
+@import "_variables.scss";
+
+.dropdown {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  margin-bottom: 18px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  text-align: left;
+}
+
+.dropdown .select {
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px;
+  min-height: 50px;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.select-span {
+  max-width: 88%;
+  display: block;
+  overflow: hidden;
+}
+
+.dropdown .select > .dropdown-icon {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  line-height: 20px;
+  width: 12px;
+  height: 12px;
+  border: 5px solid $secondary-color;
+  border-top: none;
+  border-right: none;
+  transform-origin: center;
+  transform: rotate(-45deg);
+}
+
+.dropdown:hover {
+  box-shadow: 0 0 4px rgb(204, 204, 204);
+}
+
+.dropdown:active {
+  background-color: $secondary-color;
+}
+
+.dropdown.active:hover,
+.dropdown.active {
+  box-shadow: 0 0 4px rgb(204, 204, 204);
+  border-radius: 5px 5px 0 0;
+  background-color: #ffffff;
+}
+
+.dropdown.active .select > .dropdown-icon {
+  transform-origin: center;
+  transform: rotate(-225deg);
+}
+
+.dropdown .dropdown-menu {
+  //width: 477px;
+  width: 88.4%;
+  display: none;
+  //display: block; // open/close dropdown
+  position: absolute;
+  background-color: #fff;
+  top: 30px;
+  left: 0;
+  margin-top: 1px;
+  box-shadow: 0 0 0 1px #e0e7ee;
+  border-radius: 5px;
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 9;
+}
+
+.dropdown .dropdown-menu li {
+  padding: 10px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  //height: 31px;
+  font-size: 24px;
+  padding-left: 20px;
+  //padding-right: 20px;
+  //white-space: nowrap;
+
+  @media (min-width: 576px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
+} 
+
+.dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown .dropdown-menu li:hover {
+  background-color: $secondary-color;
+  //height: 31px;
+  color: #ffffff;
+  font-size: 24px;
+
+  @media (min-width: 576px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
+}
+
+.dropdown .dropdown-menu li:active {
+  background-color: $secondary-color;
+}

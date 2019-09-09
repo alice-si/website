@@ -1,0 +1,49 @@
+@import "_variables";
+@import "blocks/_section-1_navbar";
+@import "blocks/_section-1_overview";
+
+.page-header {
+  @media (max-width: 1439px) {
+    //background-image: linear-gradient(74deg, #8a47db 45%, #1cb8c4 100%);
+  }
+}
+
+.section-1 {
+  width: 100%;
+  background-image: linear-gradient(74deg, #8a47db 40%, #1cb8c4 100%);
+
+  @media (max-width: 1439px) {
+    //background-image: linear-gradient(74deg, #8a47db 45%, #1cb8c4 100%);  
+  }   
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 30px;
+  //background-color: red;
+
+    //font-size: 30px;
+    //position: absolute;
+    //padding: 0 0 5px 0;
+    cursor: pointer;
+    //right: 0;
+    //margin-right: -30px;
+    //margin-top: 13px;
+    //top: 0;
+    //color: #fff;
+    //background-color: rgba(0,0,0,0);
+
+  &:before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 10px 0 0 #ffffff,
+                  0 20px 0 0 #ffffff;
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="54px" viewBox="0 0 46 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>Icon 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage-&amp;-Projects-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Alice.si-for-real" transform="translate(-762.000000, -1388.000000)">
+            <g id="Section-3" transform="translate(-5.000000, 944.000000)">
+                <g id="Boxes" transform="translate(135.000000, 200.000000)">
+                    <g id="Bottom" transform="translate(0.000000, 246.000000)">
+                        <g id="2" transform="translate(634.000000, 0.000000)">
+                            <g id="Icon-4">
+                                <circle id="Oval-12" fill="#9355DE" cx="20.8" cy="33.8" r="3.8"></circle>
+                                <path d="M19.73205,34 L21.76795,34 C22.1722501,34 22.5,34.3277499 22.5,34.73205 L22.5,40.26795 C22.5,40.6722501 22.1722501,41 21.76795,41 L19.73205,41 C19.3277499,41 19,40.6722501 19,40.26795 L19,34.73205 C19,34.3277499 19.3277499,34 19.73205,34 Z" id="Rectangle-18" fill="#9355DE"></path>
+                                <path d="M1.21,21 L40.79,21 C41.4582645,21 42,21.5417355 42,22.21 L42,48.79 C42,49.4582645 41.4582645,50 40.79,50 L1.21,50 C0.541735453,50 -2.58269646e-15,49.4582645 0,48.79 L0,22.21 C-8.18388039e-17,21.5417355 0.541735453,21 1.21,21 Z" id="Rectangle-17" stroke="#9355DE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M11,-1 L23.6093004,-1 C27.6910711,-1 31,2.2150879 31,6.18109982 L31,13.8189002 C31,17.7849121 27.6910711,21 23.6093004,21 C22.3110042,21 21.3372821,21 20.688134,21" id="Rectangle-17-Copy" stroke="#9355DE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(21.000000, 10.000000) rotate(-90.000000) translate(-21.000000, -10.000000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
