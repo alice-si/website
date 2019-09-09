@@ -256,4 +256,4 @@ exports.svg = svgsprite;
 exports.html = html;
 exports.watch = watch;
 
-exports.build = gulp.series(copy, style, prod, image);
+exports.build = gulp.series(copy, style, prod, image, webp);
