@@ -1,0 +1,16 @@
+@import "_variables.scss";
+
+.section-6 {
+  width: 100%;
+  padding: 0px;
+  @media (min-width: 1200px) {
+    min-height: 300px;
+  }
+}
+
+.section-6 .investors-and-media-list {
+
+  @media (min-width: 1200px) and (max-width: 1264px) {
+    justify-content: center !important;
+  }
+}

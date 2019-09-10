@@ -1,0 +1,14 @@
+@mixin no-outline {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

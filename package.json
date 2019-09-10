@@ -1,0 +1,46 @@
+{
+  "name": "Project",
+  "version": "1.0.0",
+  "description": "MyNewProject",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-cwebp": "^3.0.0",
+    "gulp-filter": "^6.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-purgecss": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^4.0.1",
+    "postcss-scss": "^2.0.0",
+    "posthtml-include": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "gulp build"
+  },
+  "browserslist": [
+    "since 2015",
+    "IE 10"
+  ],
+  "author": "Omn1scient",
+  "license": "ISC"
+}
