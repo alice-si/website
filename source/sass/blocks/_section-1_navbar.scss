@@ -18,7 +18,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 105px;
+    margin-bottom: 60px;
   }
 }
 
@@ -100,7 +100,7 @@
   &:hover {
     color: $header-color-semi;
   }
-  
+
   &::before {
     background-color: $header-color;
   }

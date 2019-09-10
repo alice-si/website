@@ -39,7 +39,7 @@
   }
 
   @media (min-width: 1440px) {
-    
+
   }
 }
 
@@ -81,7 +81,7 @@
   min-height: 50px;
   margin-bottom: 28px;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.52px;
   text-transform: uppercase;
   box-shadow: 0 2px 4px rgba(100, 100, 100, 0.5);
@@ -117,8 +117,8 @@
   }
 }
 
-.btn-success:not(:disabled):not(.disabled):active, 
-.btn-success:not(:disabled):not(.disabled).active, 
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled).active,
 .show > .btn-success.dropdown-toggle {
   color: #fff;
   background-color: $secondary-color-active;
@@ -138,7 +138,7 @@
   display: flex;
   margin: 0 auto;
 
-  @media (min-width: 575px) { 
+  @media (min-width: 575px) {
     display: flex;
     margin: 0 auto;
   }

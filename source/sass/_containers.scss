@@ -5,6 +5,10 @@
   padding-right: 15px;
   margin: 0 auto;
 
+  @media (max-width: 575px) {
+    padding: 0 45px;
+  }
+
   @media (min-width: 576px) {
     padding-left: 22px;
     padding-right: 22px;
@@ -22,13 +26,15 @@
   }
 
   @media (min-width: 1200px) {
-    padding-left: 59px;
-    padding-right: 30px;
+    padding-left: 90px;
+    padding-right: 60px;
     padding-bottom: 19px;
   }
 
   @media (min-width: 1440px) {
-    padding-left: 118px;
+    // padding-left: 118px;////
+    // padding-right: 60px;
+    padding-left: 80px;
     padding-right: 60px;
     //background-image: linear-gradient(74deg, #8a47db 45%, #1cb8c4 100%);
   }

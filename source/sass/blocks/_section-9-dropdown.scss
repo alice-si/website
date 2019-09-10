@@ -8,7 +8,6 @@
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  box-shadow: 0 0 2px rgb(204, 204, 204);
   transition: all .5s ease;
   position: relative;
   font-size: 14px;
@@ -55,7 +54,12 @@
 }
 
 .dropdown:active {
-  background-color: $secondary-color;
+  // background-color: $secondary-color;
+}
+
+.dropdown:focus {
+  border-color: #1CB8C4;
+  outline: none;
 }
 
 .dropdown.active:hover,
@@ -104,7 +108,7 @@
   @media (min-width: 992px) {
     font-size: 24px;
   }
-} 
+}
 
 .dropdown .dropdown-menu {
   padding: 0;
