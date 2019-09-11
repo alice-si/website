@@ -1010,7 +1010,8 @@ main {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 1px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: all 3s; }
   @media (min-width: 992px) {
     .alice-management-title {
       text-align: left; } }
@@ -1066,7 +1067,7 @@ main {
 
 @keyframes image-appears {
   from {
-    margin-bottom: 80px; }
+    margin-top: -80px; }
   to {
     margin-top: 0; } }
   @media (min-width: 465px) {
