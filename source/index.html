@@ -12,6 +12,12 @@
   <script src="js/lib/picturefill.min.js"></script>
   <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
   <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
+
+  <!-- Toastr -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>  <!-- jQuery is required for Toastr -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
   <script>
     var webpMachine = new webpHero.WebpMachine()
     webpMachine.polyfillDocument()
@@ -447,7 +453,7 @@
           <div class="row m-0">
             <div class="col-subscribition col-12 col-md-8 p-0">
               <h4 class="section-title new-and-community-title">Sign up to our newsletter</h4>
-              <form action="form.php" class="subscribition-form" method="post">
+              <form class="subscribition-form" onsubmit="return false">
 
                 <div class="input-wrapper">
 
@@ -455,7 +461,7 @@
                   <input class="input-email" type="email" id="email">
                 </div>
                 <div class="submit-wrapper">
-                  <button class="overview-button btn btn-success btn-submit">Sign up</button>
+                  <button onClick="signUpToNewsletter()" class="overview-button btn btn-success btn-submit">Sign up</button>
                 </div>
               </form>
             </div>
@@ -532,7 +538,7 @@
             please get in touch with your request
           </p>
           <div class="work-together">
-            <form class="work-together-form row m-0" action="form.php" method="post">
+            <form class="work-together-form row m-0" onsubmit="sendProjectProposal(); return false;">
               <div class="work-together-col col-12 col-sm-6">
                 <div class="personal-information">
                   <label class="form-label select-label">I am</label>
@@ -541,7 +547,7 @@
                     <span class="select-span"></span>
                     <div class="dropdown-icon dropdown-icon-chevron-left"></div>
                   </div>
-                  <input type="hidden" name="gender">
+                  <input type="hidden" name="gender" id="gender">
                   <ul class="dropdown-menu">
                       <li id="An Investor">An Investor</li>
                       <li id="A Charity/NGO">A Charity/NGO</li>
@@ -623,7 +629,7 @@
           </div>
           <div class="modal-body p-0">
             <div class="container-fluid d-flex justify-content-center">
-              <form action="form.php" class="w-100 p-4">
+              <form class="w-100 p-4">
                 <div class="form-row">
                   <div class="col">
                     <div class="form-group">
