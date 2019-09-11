@@ -8,26 +8,6 @@ $('a[href*="#"]').click(function() {
     return false;
 });
 
-// select applications
-
-var aliceManagementItems = document.querySelectorAll('.alice-management-item');
-var aliceManagementImages = document.querySelectorAll('.management-image-wrapper');
-
-for (var i = 0; i < aliceManagementItems.length; i++) {
-  managementClick(aliceManagementItems[i], aliceManagementImages[i]);
-}
-
-function managementClick(aliceManagementItem, aliceManagementImage) {
-  aliceManagementItem.addEventListener('click', function() {
-
-    for (var i = 0; i < aliceManagementItems.length; i++) {
-      aliceManagementItems[i].classList.remove('active');
-      aliceManagementImages[i].classList.remove('active');
-    }
-    aliceManagementItem.classList.add('active');
-    aliceManagementImage.classList.add('active');
-  })
-}
 
 // dropdown menu
 

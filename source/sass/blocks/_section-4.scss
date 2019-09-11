@@ -109,6 +109,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: all 3s;
   //text-align: center;
 
   @media (min-width: 768px) {
@@ -204,7 +205,7 @@
   height: auto;
 
   @keyframes image-appears {
-    from { margin-bottom: 80px }
+    from { margin-top: -80px }
     to { margin-top: 0 }
   }
 
