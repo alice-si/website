@@ -105,7 +105,7 @@ function autopref() {
 function ugly() {
   return gulp.src('./source/js/**/*.js')
     .pipe(gulp.dest('./build/js/'))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(rename({ suffix: '.min', prefix : '' }))
     .pipe(gulp.dest('./build/js/'))
 };
