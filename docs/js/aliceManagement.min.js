@@ -19,7 +19,7 @@ var curManagementIndex = 0;
 var clickerInterval = setInterval(function() {
   onManagementClick(curManagementIndex);
   curManagementIndex = (curManagementIndex + 1) % aliceManagementItems.length;
-}, 3500);
+}, 3000);
 
 // Manual clicking handling
 for (let i = 0; i < aliceManagementItems.length; i++) {

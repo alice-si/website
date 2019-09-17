@@ -15,8 +15,26 @@
 
   <!-- Toastr -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>  <!-- jQuery is required for Toastr -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+  <!-- jquery.lazy -->
+  <script src="js/lib/jquery.lazy.min.js"></script>
+
+  <script>
+    $(function() {
+      $('[data-src]').attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');
+      // All the images are white before loading
+
+      // All images that have data-src attribute use easy loading
+      $('[data-src]').Lazy({
+        effect: 'fadeIn',
+        scrollDirection: 'vertical',
+        effectTime: 500,
+        visibleOnly: true
+      });
+    });
+  </script>
 
   <script>
     var webpMachine = new webpHero.WebpMachine()
@@ -99,43 +117,43 @@
           <ul class="investors-and-media-list row justify-content-center justify-content-xl-between align-items-center align-content-lg-start">
             <li class="investor-and-media-item m-2">
               <a href="https://coinshares.co.uk/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-2/1.GABI_logo.webp" width="116" height="64" alt="GABI">
+                <img class="investor-ans-media-logo" data-src="img/section-2/1.GABI_logo.webp" width="116" height="64" alt="GABI">
                 <span class="visually-hidden investors-and-media-brand">Gabi</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://www.impactassets.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-2/2.ImpactAssets_logo.webp" width="150" height="62" alt="ImpactAssets">
+                <img class="investor-ans-media-logo" data-src="img/section-2/2.ImpactAssets_logo.webp" width="150" height="62" alt="ImpactAssets">
                 <span class="visually-hidden investors-and-media-brand">Impact Assets</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://gnosis.io/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-2/3.Gnosis_logo.webp" width="81" height="49" alt="Gnosis">
+                <img class="investor-ans-media-logo" data-src="img/section-2/3.Gnosis_logo.webp" width="81" height="49" alt="Gnosis">
                 <span class="visually-hidden investors-and-media-brand">Gnosis</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://www.gov.uk/government/organisations/innovate-uk" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-2/4.Innovateuk_logo.webp" width="176" height="34" alt="Innovateuk">
+                <img class="investor-ans-media-logo" data-src="img/section-2/4.Innovateuk_logo.webp" width="176" height="34" alt="Innovateuk">
                 <span class="visually-hidden investors-and-media-brand">Innovate UK</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://socialtechtrust.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="svg/section-2/5.stt_logo.svg" width="66" height="64" alt="Social Tech Trust">
+                <img class="investor-ans-media-logo" data-src="svg/section-2/5.stt_logo.svg" width="66" height="64" alt="Social Tech Trust">
                 <span class="visually-hidden investors-and-media-brand">Social Tech Trust</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://bethnalgreenventures.com/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-2/6.BGV_logo.webp" width="125" height="39" alt="BGV">
+                <img class="investor-ans-media-logo" data-src="img/section-2/6.BGV_logo.webp" width="125" height="39" alt="BGV">
                 <span class="visually-hidden investors-and-media-brand">Bethnal Green Ventures</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://www.vodafone.com/content/index.html" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-2/7.Vodafone_logo.webp" width="170" height="39" alt="Vodafone">
+                <img class="investor-ans-media-logo" data-src="img/section-2/7.Vodafone_logo.webp" width="170" height="39" alt="Vodafone">
                 <span class="visually-hidden investors-and-media-brand">Vodafone</span>
               </a>
             </li>
@@ -153,7 +171,7 @@
           <div class="advantages row">
             <div class="advantages-item d-flex flex-column d-lg-block">
               <div class="advantages-icon-wrapper d-flex justify-content-center">
-                <img class="advantages-item-icon transparency-icon" src="svg/section-3/search-icon.svg" width="50" height="50" alt="Decentralised transparency">
+                <img class="advantages-item-icon transparency-icon" data-src="svg/section-3/search-icon.svg" width="50" height="50" alt="Decentralised transparency">
               </div>
               <h3 class="advantages-item-title item-title">
                 Decentralised transparency
@@ -164,7 +182,7 @@
             </div>
             <div class="advantages-item d-flex flex-column d-lg-block">
               <div class="advantages-icon-wrapper d-flex justify-content-center">
-                <img class="advantages-item-icon coordination-icon" src="svg/section-3/settings-icon.svg" width="41" height="50" alt="Multi-party coordination">
+                <img class="advantages-item-icon coordination-icon" data-src="svg/section-3/settings-icon.svg" width="41" height="50" alt="Multi-party coordination">
               </div>
               <h3 class="advantages-item-title item-title">
                 Multi-party coordination
@@ -178,7 +196,7 @@
           <div class="advantages row">
             <div class="advantages-item d-flex flex-column d-lg-block">
               <div class="advantages-icon-wrapper d-flex justify-content-center">
-                <img class="advantages-item-icon governance-icon" src="svg/section-3/eye-icon.svg" width="54" height="29" alt="Flexible governance">
+                <img class="advantages-item-icon governance-icon" data-src="svg/section-3/eye-icon.svg" width="54" height="29" alt="Flexible governance">
               </div>
               <h3 class="advantages-item-title item-title">
                 Flexible governance
@@ -189,7 +207,7 @@
             </div>
             <div class="advantages-item d-flex flex-column d-lg-block">
               <div class="advantages-icon-wrapper d-flex justify-content-center">
-                <img class="advantages-item-icon privacy-icon" src="svg/section-3/lock-icon.svg" width="42" height="50" alt="Privacy and security">
+                <img class="advantages-item-icon privacy-icon" data-src="svg/section-3/lock-icon.svg" width="42" height="50" alt="Privacy and security">
               </div>
               <h3 class="advantages-item-title item-title">
                 Privacy and security
@@ -220,7 +238,7 @@
                   </p>
                   <picture>
                     <source media="(min-width: 0px) and (max-width: 992px)" srcset="img/section-4/management-1.png">
-                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                    <img class="management-image alice-donations-image" data-src="img/section-4/empty.webp" width="763" height="484">
                   </picture>
                 </li>
 
@@ -233,7 +251,7 @@
                   </p>
                   <picture>
                     <source media="(min-width: 0px) and (max-width: 992px)" srcset="img/section-4/management-2.png">
-                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                    <img class="management-image alice-donations-image" data-src="img/section-4/empty.webp" width="763" height="484">
                   </picture>
                 </li>
 
@@ -246,7 +264,7 @@
                   </p>
                   <picture>
                     <source media="(min-width: 0px) and (max-width: 992px)" srcset="img/section-4/management-3.png">
-                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                    <img class="management-image alice-donations-image" data-src="img/section-4/empty.webp" width="763" height="484">
                   </picture>
                 </li>
               </ul>
@@ -254,19 +272,19 @@
                 <div class="management-image-wrapper active">
                   <picture>
                     <source media="(min-width: 992px)" srcset="img/section-4/management-1.png">
-                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                    <img class="management-image alice-donations-image" data-src="img/section-4/empty.webp" width="763" height="484">
                   </picture>
                 </div>
                 <div class="management-image-wrapper">
                   <picture>
                     <source media="(min-width: 992px)" srcset="img/section-4/management-2.png">
-                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                    <img class="management-image alice-donations-image" data-src="img/section-4/empty.webp" width="763" height="484">
                   </picture>
                 </div>
                 <div class="management-image-wrapper">
                   <picture>
                     <source media="(min-width: 992px)" srcset="img/section-4/management-3.png">
-                    <img class="management-image alice-donations-image" src="img/section-4/empty.webp" width="763" height="484">
+                    <img class="management-image alice-donations-image" data-src="img/section-4/empty.webp" width="763" height="484">
                   </picture>
                 </div>
               </div>
@@ -287,7 +305,7 @@
                 <a class="partner-link" href="https://gnosis.io/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" src="img/section-5/1.Gnosis_logo.webp" width="128" height="77" alt="Gnosis">
+                      <img class="card-image" data-src="img/section-5/1.Gnosis_logo.webp" width="128" height="77" alt="Gnosis">
                     </div>
                   </div>
                   <div class="card-body">
@@ -303,7 +321,7 @@
                 <a class="partner-link" href="https://www.imperial.ac.uk/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" src="img/section-5/2.ICL_logo.webp" width="121" height="79" alt="ICL">
+                      <img class="card-image" data-src="img/section-5/2.ICL_logo.webp" width="121" height="79" alt="ICL">
                     </div>
                   </div>
                   <div class="card-body">
@@ -321,7 +339,7 @@
                 <a class="partner-link" href="https://skalelabs.com/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" src="img/section-5/3.Skale_logo.webp" width="128" height="128" alt="Skale">
+                      <img class="card-image" data-src="img/section-5/3.Skale_logo.webp" width="128" height="128" alt="Skale">
                     </div>
                   </div>
                   <div class="card-body">
@@ -337,7 +355,7 @@
                 <a class="partner-link" href="https://www.binance.charity/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" src="img/section-5/4.Binance_charity_logo.webp" width="127" height="90" alt="Binance">
+                      <img class="card-image" data-src="img/section-5/4.Binance_charity_logo.webp" width="127" height="90" alt="Binance">
                     </div>
                   </div>
                   <div class="card-body">
@@ -355,7 +373,7 @@
                 <a class="partner-link" href="https://www.ashurst.com/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" src="img/section-5/5.Ashurst_logo.webp" width="129" height="100" alt="Ashurst">
+                      <img class="card-image" data-src="img/section-5/5.Ashurst_logo.webp" width="129" height="100" alt="Ashurst">
                     </div>
                   </div>
                   <div class="card-body">
@@ -371,7 +389,7 @@
                 <a class="partner-link" href="https://www.cafonline.org/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" src="img/section-5/6.CAF_logo.webp" width="118" height="74" alt="CAF">
+                      <img class="card-image" data-src="img/section-5/6.CAF_logo.webp" width="118" height="74" alt="CAF">
                     </div>
                   </div>
                   <div class="card-body">
@@ -395,48 +413,48 @@
 
             <li class="investor-and-media-item m-2">
               <a href="https://bitcoinmagazine.com/articles/bitcoin-and-blockchain-technology-future-philanthropy" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-6/1.Bitcoin_magazine_logo.webp" width="145" height="31" alt="Bitcoin magazine">
+                <img class="investor-ans-media-logo" data-src="img/section-6/1.Bitcoin_magazine_logo.webp" width="145" height="31" alt="Bitcoin magazine">
                 <span class="visually-hidden investors-and-media-brand">Bitcoin magazine</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="https://www.standard.co.uk/tech/google-campus-london-residency-tech-for-good-a3941291.html" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-6/2.ES_logo.webp" width="230" height="30" alt="Evening Standard">
+                <img class="investor-ans-media-logo" data-src="img/section-6/2.ES_logo.webp" width="230" height="30" alt="Evening Standard">
                 <span class="visually-hidden investors-and-media-brand">Evening Standard</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="https://www.nytimes.com/2017/11/06/business/bitcoin-charity-donations.html" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-6/3.New_York_Times_logo.webp" width="120" height="96" alt="The New York Times">
+                <img class="investor-ans-media-logo" data-src="img/section-6/3.New_York_Times_logo.webp" width="120" height="96" alt="The New York Times">
                 <span class="visually-hidden investors-and-media-brand">The New York Times</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="https://www.huffingtonpost.co.uk/raphael-mazet/charitable-giving-app_b_10081744.html?guccounter=1" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-6/4.The_Huffington_Post_logo.webp" width="150" height="58" alt="The Huffington Post">
+                <img class="investor-ans-media-logo" data-src="img/section-6/4.The_Huffington_Post_logo.webp" width="150" height="58" alt="The Huffington Post">
                 <span class="visually-hidden investors-and-media-brand">The Huffington Post</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="http://methods.sagepub.com/video/srmpromo/m0oxBt/using-blockchain-technology-for-transparent-social-funding-alice" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-6/5.Sage_rm_logo.webp" width="120" height="64" alt="Sage Research Methods">
+                <img class="investor-ans-media-logo" data-src="img/section-6/5.Sage_rm_logo.webp" width="120" height="64" alt="Sage Research Methods">
                 <span class="visually-hidden investors-and-media-brand">Sage Research Methods</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="https://www.ibtimes.co.uk/ethereum-helping-londons-homeless-st-mungos-smart-contracts-1620724" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-6/6.IBT_logo.webp" width="140" height="62" alt="International Business Times">
+                <img class="investor-ans-media-logo" data-src="img/section-6/6.IBT_logo.webp" width="140" height="62" alt="International Business Times">
                 <span class="visually-hidden investors-and-media-brand">International Business Times</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://blogs.msdn.microsoft.com/uk_faculty_connection/2018/02/19/etheroscope-a-smart-contract-visualiser/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="svg/section-6/7.ms_dev_logo.svg" width="151" height="32" alt="Microsoft Developer">
+                <img class="investor-ans-media-logo" data-src="svg/section-6/7.ms_dev_logo.svg" width="151" height="32" alt="Microsoft Developer">
                 <span class="visually-hidden investors-and-media-brand">Microsoft Developer</span>
               </a>
             </li>
@@ -470,14 +488,14 @@
               <h4 class="section-title follow-us-title">Follow us</h4>
                 <div class="row m-0 follow-us-icons">
                     <a class="follow-us-icon medium-icon" target="_blank" href="https://medium.com/alice-si">
-                      <img src="img/section-7/Medium_logo.webp" width="244" height="50" alt="Medium">
+                      <img data-src="img/section-7/Medium_logo.webp" width="244" height="50" alt="Medium">
                       <span class="visually-hidden">
                         Medium
                       </span>
                     </a>
 
                     <a class="follow-us-icon twitter-icon" target="_blank" href="https://twitter.com/alice_si_">
-                      <img src="img/section-7/twitter_logo.webp" width="76" height="63" alt="Medium">
+                      <img data-src="img/section-7/twitter_logo.webp" width="76" height="63" alt="Medium">
                       <span class="visually-hidden">
                         Twitter
                       </span>
@@ -495,31 +513,31 @@
           <ul class="investors-and-media-list row justify-content-around align-items-center align-content-lg-start">
             <li class="investor-and-media-item m-2">
               <a href="https://www.mungos.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-8/1.Mungos_logo.webp" width="auto" height="60" alt="St Mungo’s">
+                <img class="investor-ans-media-logo" data-src="img/section-8/1.Mungos_logo.webp" width="auto" height="60" alt="St Mungo’s">
                 <span class="visually-hidden investors-and-media-brand">St Mungo’s</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://forgottenanimals.org" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-8/2.FA_logo.webp" width="79" height="79" alt="Forgotten Animals">
+                <img class="investor-ans-media-logo" data-src="img/section-8/2.FA_logo.webp" width="79" height="79" alt="Forgotten Animals">
                 <span class="visually-hidden investors-and-media-brand">Forgotten Animals</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://theaokc.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-8/3.AOKC_logo.webp" width="87" height="87" alt="AOKC">
+                <img class="investor-ans-media-logo" data-src="img/section-8/3.AOKC_logo.webp" width="87" height="87" alt="AOKC">
                 <span class="visually-hidden investors-and-media-brand">AOKC</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://resonance.ltd.uk/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="svg/section-8/4.resonance_logo.svg" width="170" height="68" alt="Resonance">
+                <img class="investor-ans-media-logo" data-src="svg/section-8/4.resonance_logo.svg" width="170" height="68" alt="Resonance">
                 <span class="visually-hidden investors-and-media-brand">Resonance</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://www.cancerresearchuk.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" src="img/section-8/5.CRUK_logo.webp" width="auto" height="50" alt="CRUK">
+                <img class="investor-ans-media-logo" data-src="img/section-8/5.CRUK_logo.webp" width="auto" height="50" alt="CRUK">
                 <span class="visually-hidden investors-and-media-brand">CRUK</span>
               </a>
             </li>
@@ -661,10 +679,11 @@
         </div>
       </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" crossorigin="anonymous"></script>
   <script src="js/lib/bootstrap.bundle.min.js"></script>
   <script src="js/script.min.js"></script>
   <script src="js/aliceManagement.min.js"></script>
   <script src="js/send.min.js"></script>
+  <!-- <script src="js/lazy.min.js"></script> -->
+
 </body>
 </html>
