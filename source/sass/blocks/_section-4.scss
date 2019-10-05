@@ -3,24 +3,31 @@
 .section-4 {
   width: 100%;
   min-height: 300px;
-  padding: 0px;
+  padding: 0;
+  background-color: #f8fafd;
 }
 
 .section-4 .section-title {
   margin: 0;
-  margin-bottom: 68px;
-  text-align: left;
+  margin-bottom: 30px;
+
+  @media (min-width: 576px) {
+    margin-bottom: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
   @media (min-width: 768px) {
     //text-align: center;
   }
 
   @media (min-width: 992px) {
-    text-align: left;
+    //text-align: left;
   }
 
   @media (min-width: 1200px) {
-    text-align: center;
+    //text-align: center;
+    margin-bottom: 34px;
   }
 
   & br {
@@ -34,214 +41,163 @@
   }
 }
 
-.alice-management-list {
-  padding: 0;
-  list-style: none;
-  margin-bottom: 0;
+.section-4 .section-tagline {
+  margin-bottom: 30px;
 
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: 576px) {
+    //margin-left: 10%;
+    //margin-right: 10%;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 48px;
+    margin-bottom: 64px;
   }
 }
 
-.alice-management-item {
-  position: relative;
-  padding: 0;
+.alice-application {
+
+}
+
+.alice-application__image-col,
+.alice-application__advantages-col {
   padding-left: 0;
   padding-right: 0;
-  margin: 0;
-  margin-bottom: 55px;
-  width: 100%;
-  transition: all 0.5s;
-  cursor: pointer;
 
-  &:hover {
-    color: $secondary-color;
-  }
-
-    &.active .active-line {
-    color: $secondary-color;
-
-    &::after {
-      opacity: 1;
-    }
+  @media (min-width: 576px) {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   
-  @media (min-width: 465px) {
-    //padding-left: 5%;
-    //padding-right: 5%;
-  }
-
-  @media (min-width: 700px) {
-    //padding-left: 8%;
-    //padding-right: 8%;
-  }
-
   @media (min-width: 768px) {
-    //width: 40%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
-
 
   @media (min-width: 992px) {
-    padding-top: 18px;
-    padding-right: 0;
     padding-left: 0;
-    margin-bottom: 2px;
-  }
-
-  @media (min-width: 1200px) {
-    padding-top: 0;
-
-  }
-
-  & picture {
-    @media (min-width: 992px) {
-      display: none;
-    }
+    padding-right: 0;
   }
 }
 
-.alice-management-title {
-  margin-bottom: 11px;
-  opacity: 0.9;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 3s;
-  //text-align: center;
-
-  @media (min-width: 768px) {
-    //text-align: center;
-  }
+.alice-application__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  //width: 100%;
 
   @media (min-width: 992px) {
-    text-align: left;
+    margin-left: 35px;
   }
-
-  & .active-line {
-    display: inline-block;
-    position: relative;
-
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   left: 2px;
-    //   bottom: -4px;
-    //   width: 98%;
-    //   height: 1px;
-    //   opacity: 0;
-    //   background-color: $secondary-color;
-    //   transition: all 0.2s;
-    // }
-
-    &::after {
-      position: absolute;
-      content: "";
-      left: 2px;
-      bottom: -4px;
-      width: 98%;
-      height: 1px;
-      opacity: 0;
-      background-color: $secondary-color;
-      transition: all 0.2s;
-    }
-  }
-}
-
-.alice-management-item:hover .active-line::after {
-  opacity: 1;
-  width: 98%;
-  bottom: -7px;
-}
-
-// .alice-management-item:hover .active-line::before {
-//   opacity: 1;
-//   width: 98%;
-//   bottom: 35px;
-// }
-
-
-
-.alice-management-description {
-  opacity: 0.9;
-  color: #4a4a4a;
-  font-size: 22px;
-  //font-weight: 400;
-  line-height: 30px;
 
   @media (min-width: 1200px) {
-    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+
+  @media (min-width: 1440px) {
+    margin-left: 70px;
   }
 }
 
-.management-image-wrapper {
-  display: block;
+.alice-application__image {
   display: none;
+  width: 100%;
 
-  @media (min-width: 768px) {
-    display: none;
-    order: 1;
+  @media (min-width: 576px) {
+    //width: 420px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 581px;
+    height: 395px;
   }
 
   &.active {
-
-    @media (min-width: 992px) {
-      display: block;
-    }
-
-    @media (max-width: 1439px) {
-      display: flex;
-      align-content: center;
-    }
+    display: block;
   }
 }
 
-.management-image {
-  width: 100%;
-  height: 100%;
-  //width: auto;
-  height: auto;
+.slider-bullets-wrapper {
+  display: flex;
+  justify-content: center;
 
-  @keyframes image-appears {
-    from { margin-top: -80px }
-    to { margin-top: 0 }
-  }
-
-  animation-name: image-appears;
-  animation-duration: 1s;
-
-  @media (min-width: 465px) {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  @media (min-width: 700px) {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  @media (min-width: 1440px) {
-    width: 100%;
-    height: auto;
-    padding-left: 80px;
-    padding-right: 0;
-  }
-}
-
-.management-image-col {
-  display: none;
 
   @media (min-width: 992px) {
-    display: flex;
-    justify-content: center;
+    margin-left: 57px;
+  }
+}
+
+.slider-bullets-block {
+  display: flex;
+}
+
+.slider-bullet {
+  position: relative;
+  margin-right: 16px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9355de;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
   }
 
-  @media (max-width: 1439px) {
-    //display: flex;
-    width: 100%;
-    height: 100%;
-    margin: auto 0;
+  &.active {
+    background-color: #9355de;
+  }
+}
+
+.alice-application__advantages {
+  list-style: none;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.alice-application__advantages-item {
+  margin-bottom: 10px;
+  display: none;
+  cursor: pointer;
+
+  @media (min-width: 992px) {
+    display: block;
+    padding: 0 35px;
+    margin-bottom: 8%;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 35px;
+    margin-bottom: 50px;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  &.active .alice-application__advantages-text {
+    color: #9355de;
+    font-weight: 600;
+  }
+}
+
+.alice-application__advantages-text {
+  color: #6b7c93;
+  font-size: 18px;
+  text-align: center;
+
+  @media (min-width: 480px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
   }
 }
