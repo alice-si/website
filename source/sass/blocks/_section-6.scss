@@ -1,15 +1,28 @@
 @import "_variables.scss";
 
 .section-6 {
+  position: relative;
   width: 100%;
-  padding: 0px;
+  padding: 0;
+  
   @media (min-width: 1200px) {
+    position: relative;
     min-height: 300px;
+  }
+  
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 16px;
+    width: 100%;
+    width: calc(100% - 32px);
+    height: 1px;
+    background-color: #ccc;
   }
 }
 
 .section-6 .investors-and-media-list {
-
   @media (min-width: 1200px) and (max-width: 1264px) {
     justify-content: center !important;
   }

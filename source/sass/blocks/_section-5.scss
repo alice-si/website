@@ -52,6 +52,7 @@
 .partner-link {
   display: block;
   width: 100%;
+  min-height: 170px;
   padding: 20px;
   color: $main-text-color;
   box-shadow: 0 6px 8px rgba(164, 164, 164, 0.21);
@@ -81,7 +82,7 @@
   }
 
   @media (min-width: 1440px) {
-    min-height: 210px;
+    //min-height: 210px;
   }
 }
 
@@ -122,7 +123,7 @@
   }
   
   @media (min-width: 1200px) {
-    padding-bottom: 40px;
+    //padding-bottom: 40px;
   }
 }
 
@@ -165,6 +166,7 @@
 
   @media (min-width: 576px) {
     text-align: left;
+    min-height: 78px;
   }         
 }
 

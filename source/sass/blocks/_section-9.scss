@@ -1,11 +1,11 @@
 @import "_variables";
 
 .section-9 {
-  background-color: $section-color;
+  //background-color: $section-color;
 }
 
 .section-9 .section-title {
-  margin-bottom: 17px;
+  margin-bottom: 33px;
   text-align: left;
 
   @media (min-width: 1200px) {
@@ -14,7 +14,6 @@
 }
 
 .section-tagline {
-  text-align: center;
   margin-bottom: 42px;
   text-align: left;
 
