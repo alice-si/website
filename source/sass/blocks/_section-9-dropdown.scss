@@ -20,7 +20,7 @@
   display: block;
   padding: 10px 20px;
   min-height: 50px;
-  font-size: 24px;
+  font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -53,10 +53,6 @@
   box-shadow: 0 0 4px rgb(204, 204, 204);
 }
 
-.dropdown:active {
-  // background-color: $secondary-color;
-}
-
 .dropdown:focus {
   border-color: #1CB8C4;
   outline: none;
@@ -75,10 +71,8 @@
 }
 
 .dropdown .dropdown-menu {
-  //width: 477px;
   width: 88.4%;
   display: none;
-  //display: block; // open/close dropdown
   position: absolute;
   background-color: #fff;
   top: 30px;
@@ -95,18 +89,15 @@
   padding: 10px;
   transition: all .2s ease-in-out;
   cursor: pointer;
-  //height: 31px;
-  font-size: 24px;
+  font-size: 16px;
   padding-left: 20px;
-  //padding-right: 20px;
-  //white-space: nowrap;
 
   @media (min-width: 576px) {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @media (min-width: 992px) {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 
@@ -117,17 +108,8 @@
 
 .dropdown .dropdown-menu li:hover {
   background-color: $secondary-color;
-  //height: 31px;
   color: #ffffff;
-  font-size: 24px;
-
-  @media (min-width: 576px) {
-    font-size: 20px;
-  }
-
-  @media (min-width: 992px) {
-    font-size: 24px;
-  }
+  font-size: 16px;
 }
 
 .dropdown .dropdown-menu li:active {

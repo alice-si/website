@@ -119,8 +119,9 @@
   }
 
   @media (min-width: 1440px) {
-    padding-left: 118px;
-    padding-right: 118px;
+    // Commented, because we needed more space for tablet
+    // padding-left: 118px;
+    // padding-right: 118px;
   }
 }
 
