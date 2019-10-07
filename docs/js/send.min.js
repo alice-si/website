@@ -1,5 +1,6 @@
 var url = 'https://webflow.com/api/v1/form/597df3f24189db000148a760';
 
+// This function is not used (because we switched to mailchimp for newsletter singing up)
 function signUpToNewsletter() {
   var email = document.getElementById('email').value;
   sendData({

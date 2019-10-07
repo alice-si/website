@@ -160,7 +160,7 @@
 
           <div class="alice-application">
             <div class="row mx-0">
-              <div class="alice-application__image-col col-12 col-lg-7">
+              <div class="alice-application__image-col col-12 col-lg-8">
                 <div class="alice-application__wrapper">
                   <img class="alice-application__image active" src="img/section-4/application-1.webp">
                   <img class="alice-application__image" src="img/section-4/application-2.webp">
@@ -178,7 +178,7 @@
                   </div>
                 </div>
               </div>
-              <div class="alice-application__advantages-col col-12 col-lg-5">
+              <div class="alice-application__advantages-col col-12 col-lg-4">
                 <ul class="alice-application__advantages">
                   <li class="alice-application__advantages-item active">
                     <p class="alice-application__advantages-text">Scalable Project Finance</p>
@@ -385,15 +385,14 @@
           <div class="row m-0">
             <div class="col-subscribition col-12 col-md-8 p-0">
               <h4 class="section-title new-and-community-title">Sign up to our newsletter</h4>
-              <form class="subscribition-form" onsubmit="return false">
+              <form class="subscribition-form" data-name="Email Form" id="mc-embedded-subscribe-form" action="//alice.us12.list-manage.com/subscribe/post?u=6f75f37dba1d873874416cd88&amp;id=3ddf423ed8" method="post" target="_blank" name="mc-embedded-subscribe-form">
 
                 <div class="input-wrapper">
-
                   <label class="email-label" for="email">Your email address</label>
-                  <input class="input-email" type="email" id="email">
+                  <input class="input-email" name="EMAIL" type="email" id="email">
                 </div>
                 <div class="submit-wrapper">
-                  <button onClick="signUpToNewsletter()" class="overview-button btn btn-success btn-submit">Sign up</button>
+                  <button type="submit" class="overview-button btn btn-success btn-submit">Sign up</button>
                 </div>
               </form>
             </div>
@@ -490,9 +489,9 @@
           <div class="our-contacts row m-0">
             <div class="contacts-col col-6 col-md-3 col-xs-11 col-xs-offset-1">
               <p class="terms">
-                <a class="terms-links" href="https://s3.eu-west-2.amazonaws.com/alice-res/terms_of_use.pdf">Terms of Use</a>
-                <a class="terms-links" href="https://s3.eu-west-2.amazonaws.com/alice-res/privacy_policy.pdf">Privacy Policy</a>
-                <a class="terms-links" href="">© Alice SI Ltd</a>
+                <a class="terms-links" target="_blank" href="https://s3.eu-west-2.amazonaws.com/alice-res/terms_of_use.pdf">Terms of Use</a>
+                <a class="terms-links" target="_blank" href="https://s3.eu-west-2.amazonaws.com/alice-res/privacy_policy.pdf">Privacy Policy</a>
+                <span class="alice-copyright">© Alice SI Ltd</span>
               </p>
             </div>
             <div class="contacts-col col-6 col-md-3 col-xs-11 col-xs-offset-1">
