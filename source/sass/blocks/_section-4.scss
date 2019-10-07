@@ -2,7 +2,7 @@
 
 .section-4 {
   width: 100%;
-  min-height: 300px;
+  min-height: 400px;
   padding: 0;
   background-color: #f8fafd;
 }
@@ -87,11 +87,11 @@
   margin-bottom: 34px;
   
   @media (max-width: 992px) {
-    min-height: 55vw;
+    min-height: 60vw;
   }
 
   @media (min-width: 992px) {
-    min-height: 400px;
+    min-height: 460px;
     margin-left: 35px;
   }
 
@@ -115,8 +115,8 @@
   }
 
   @media (min-width: 1200px) {
-    width: 581px;
-    height: 395px;
+    width: 654px;
+    height: 452px;
   }
 
   &.active {
