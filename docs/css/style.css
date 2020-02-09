@@ -1444,6 +1444,9 @@ main {
     width: 76px;
     height: 63px; } }
 
+.section-9 {
+  background-color: #f8fafd; }
+
 .section-9 .section-title {
   margin-bottom: 33px;
   text-align: left; }
@@ -1968,7 +1971,7 @@ a:hover {
 
 .section-11 .card-text {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 26px;
   color: #6b7c93;
   margin-bottom: 13px;
@@ -1976,7 +1979,7 @@ a:hover {
   max-width: 344px; }
   @media (min-width: 768px) {
     .section-11 .card-text {
-      font-size: 22px; } }
+      font-size: 20px; } }
 
 .section-11 .technical-innovations-link {
   position: relative;
