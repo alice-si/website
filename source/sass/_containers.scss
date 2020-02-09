@@ -1,14 +1,8 @@
 .wrapper {
   max-width: 1440px;
-  padding-top: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 18px 0 18px;
   margin: 0 auto;
-
-  @media (max-width: 575px) {
-    padding: 0 45px;
-  }
-
+  
   @media (min-width: 576px) {
     padding-left: 22px;
     padding-right: 22px;
@@ -48,21 +42,15 @@
 .section-2 .wrapper {
   padding-top: 83px;
   padding-bottom: 50px;
-
-  @media (min-width: 768px) {
-
-  }
-
+  
   @media (min-width: 992px) {
     padding-left: 30px;
     padding-right: 30px;
-
   }
 
   @media (min-width: 1200px) {
     padding-left: 30px;
     padding-right: 25px;
-
   }
 
   @media (min-width: 1440px) {
@@ -151,11 +139,7 @@
 .section-6 .wrapper {
   padding-top: 85px;
   padding-bottom: 49px;
-
-  @media (min-width: 768px) {
-
-  }
-
+  
   @media (min-width: 992px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -176,11 +160,7 @@
 .section-7 .wrapper {
   padding-top: 68px;
   padding-bottom: 75px;
-
-  @media (min-width: 768px) {
-
-  }
-
+  
   @media (min-width: 992px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -201,10 +181,6 @@
   padding-top: 85px;
   padding-bottom: 42px;
 
-  @media (min-width: 768px) {
-
-  }
-
   @media (min-width: 992px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -224,10 +200,7 @@
 .section-9 .wrapper {
   padding-top: 85px;
   padding-bottom: 80px;
-
-  @media (min-width: 768px) {
-
-  }
+  
 
   @media (min-width: 992px) {
     padding-left: 30px;
@@ -242,6 +215,47 @@
   @media (min-width: 1440px) {
     padding-left: 118px;
     padding-right: 118px;
+  }
+}
+
+.section-10 .wrapper {
+  padding-top: 84px;
+  padding-bottom: 58px;
+
+  @media (min-width: 992px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 105px;
+    padding-right: 102px;
+  }
+}
+
+.section-11 .wrapper {
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  @media (min-width: 992px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 105px;
+    padding-right: 102px;
   }
 }
 
