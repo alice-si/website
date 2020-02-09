@@ -68,10 +68,11 @@
   &:nth-child(2) {
     margin-bottom: 25px;
   }
+}
 
-  &:last-child {
-    color: #1998a2;;
-  }
+.alice-copyright {
+  color:#1998a2;
+  font-size: 18px;
 }
 
 .alice-link {

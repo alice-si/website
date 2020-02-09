@@ -839,8 +839,8 @@
         combined           : false,
 
         // attributes
-        attribute          : 'data-src',
-        srcsetAttribute    : 'data-srcset',
+        attribute          : 'src',
+        srcsetAttribute    : 'srcset',
         sizesAttribute     : 'data-sizes',
         retinaAttribute    : 'data-retina',
         loaderAttribute    : 'data-loader',

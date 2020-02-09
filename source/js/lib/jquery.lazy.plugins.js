@@ -10,25 +10,25 @@
  */
 ;(function($) {
     // load data by ajax request and pass them to elements inner html, like:
-    // <div data-loader="ajax" data-src="url.html" data-method="post" data-type="html"></div>
+    // <div data-loader="ajax" src="url.html" data-method="post" data-type="html"></div>
     $.lazy('ajax', function(element, response) {
         ajaxRequest(this, element, response, element.attr('data-method'));
     });
 
     // load data by ajax get request and pass them to elements inner html, like:
-    // <div data-loader="get" data-src="url.html" data-type="html"></div>
+    // <div data-loader="get" src="url.html" data-type="html"></div>
     $.lazy('get', function(element, response) {
         ajaxRequest(this, element, response, 'GET');
     });
 
     // load data by ajax post request and pass them to elements inner html, like:
-    // <div data-loader="post" data-src="url.html" data-type="html"></div>
+    // <div data-loader="post" src="url.html" data-type="html"></div>
     $.lazy('post', function(element, response) {
         ajaxRequest(this, element, response, 'POST');
     });
 
     // load data by ajax put request and pass them to elements inner html, like:
-    // <div data-loader="put" data-src="url.html" data-type="html"></div>
+    // <div data-loader="put" src="url.html" data-type="html"></div>
     $.lazy('put', function(element, response) {
         ajaxRequest(this, element, response, 'PUT');
     });
@@ -49,7 +49,7 @@
         }
 
         $.ajax({
-            url: element.attr('data-src'),
+            url: element.attr('src'),
             type: method === 'POST' || method === 'PUT' ? method : 'GET',
             data: data,
             dataType: element.attr('data-type') || 'html',
@@ -69,7 +69,7 @@
 
                 // remove attributes
                 if (instance.config('removeAttribute')) {
-                    element.removeAttr('data-src data-method data-type');
+                    element.removeAttr('src data-method data-type');
                 }
             },
 
@@ -100,21 +100,21 @@
 ;(function($) {
     // loads audio and video tags including tracks by two ways, like:
     // <audio>
-    //   <data-src src="audio.ogg" type="video/ogg"></data-src>
-    //   <data-src src="audio.mp3" type="video/mp3"></data-src>
+    //   <src src="audio.ogg" type="video/ogg"></src>
+    //   <src src="audio.mp3" type="video/mp3"></src>
     // </audio>
     // <video data-poster="poster.jpg">
-    //   <data-src src="video.ogv" type="video/ogv"></data-src>
-    //   <data-src src="video.webm" type="video/webm"></data-src>
-    //   <data-src src="video.mp4" type="video/mp4"></data-src>
+    //   <src src="video.ogv" type="video/ogv"></src>
+    //   <src src="video.webm" type="video/webm"></src>
+    //   <src src="video.mp4" type="video/mp4"></src>
     //   <data-track kind="captions" src="captions.vtt" srclang="en"></data-track>
     //   <data-track kind="descriptions" src="descriptions.vtt" srclang="en"></data-track>
     //   <data-track kind="subtitles" src="subtitles.vtt" srclang="de"></data-track>
     // </video>
     //
     // or:
-    // <audio data-src="audio.ogg|video/ogg,video.mp3|video/mp3"></video>
-    // <video data-poster="poster.jpg" data-src="video.ogv|video/ogv,video.webm|video/webm,video.mp4|video/mp4">
+    // <audio src="audio.ogg|video/ogg,video.mp3|video/mp3"></video>
+    // <video data-poster="poster.jpg" src="video.ogv|video/ogv,video.webm|video/webm,video.mp4|video/mp4">
     //   <data-track kind="captions" src="captions.vtt" srclang="en"></data-track>
     //   <data-track kind="descriptions" src="descriptions.vtt" srclang="en"></data-track>
     //   <data-track kind="subtitles" src="subtitles.vtt" srclang="de"></data-track>
@@ -123,7 +123,7 @@
         var elementTagName = element[0].tagName.toLowerCase();
 
         if (elementTagName === 'audio' || elementTagName === 'video') {
-            var srcAttr = 'data-src',
+            var srcAttr = 'src',
                 sources = element.find(srcAttr),
                 tracks = element.find('data-track'),
                 sourcesInError = 0,
@@ -220,15 +220,15 @@
  */
 ;(function($) {
     // load iframe content, like:
-    // <iframe data-src="iframe.html"></iframe>
+    // <iframe src="iframe.html"></iframe>
     //
     // enable content error check with:
-    // <iframe data-src="iframe.html" data-error-detect="true"></iframe>
+    // <iframe src="iframe.html" data-error-detect="true"></iframe>
     $.lazy(['frame', 'iframe'], 'iframe', function(element, response) {
         var instance = this;
 
         if (element[0].tagName.toLowerCase() === 'iframe') {
-            var srcAttr = 'data-src',
+            var srcAttr = 'src',
                 errorDetectAttr = 'data-error-detect',
                 errorDetect = element.attr(errorDetectAttr);
 
@@ -334,27 +334,27 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 ;(function($) {
-    var srcAttr = 'data-src',
-        srcsetAttr = 'data-srcset',
+    var srcAttr = 'src',
+        srcsetAttr = 'srcset',
         mediaAttr = 'data-media',
         sizesAttr = 'data-sizes',
         typeAttr = 'data-type';
 
     // loads picture elements like:
     // <picture>
-    //   <data-src srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" media="(min-width: 600px)" type="image/jpeg"></data-src>
-    //   <data-src srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" media="(min-width: 400px)" type="image/jpeg"></data-src>
+    //   <src srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" media="(min-width: 600px)" type="image/jpeg"></src>
+    //   <src srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" media="(min-width: 400px)" type="image/jpeg"></src>
     //   <data-img src="default.jpg" >
     // </picture>
     //
     // or:
-    // <picture data-src="default.jpg">
-    //   <data-src srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" media="(min-width: 600px)" type="image/jpeg"></data-src>
-    //   <data-src srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" media="(min-width: 400px)" type="image/jpeg"></data-src>
+    // <picture src="default.jpg">
+    //   <src srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" media="(min-width: 600px)" type="image/jpeg"></src>
+    //   <src srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" media="(min-width: 400px)" type="image/jpeg"></src>
     // </picture>
     //
     // or just with attributes in one line:
-    // <picture data-src="default.jpg" data-srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" data-media="(min-width: 600px)" data-sizes="" data-type="image/jpeg" />
+    // <picture src="default.jpg" srcset="1x.jpg 1x, 2x.jpg 2x, 3x.jpg 3x" data-media="(min-width: 600px)" data-sizes="" data-type="image/jpeg" />
     $.lazy(['pic', 'picture'], ['picture'], function(element, response) {
         var elementTagName = element[0].tagName.toLowerCase();
 
@@ -524,14 +524,14 @@
  */
 ;(function($) {
     // loads javascript files for script tags, like:
-    // <script data-src="file.js" type="text/javascript"></script>
+    // <script src="file.js" type="text/javascript"></script>
     $.lazy(['js', 'javascript', 'script'], 'script', function(element, response) {
         if (element[0].tagName.toLowerCase() === 'script') {
-            element.attr('src', element.attr('data-src'));
+            element.attr('src', element.attr('src'));
 
             // remove attribute
             if (this.config('removeAttribute')) {
-                element.removeAttr('data-src');
+                element.removeAttr('src');
             }
         }
         else {
@@ -553,15 +553,15 @@
  */
 ;(function($) {
     // load vimeo video iframe, like:
-    // <iframe data-loader="vimeo" data-src="176894130" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    // <iframe data-loader="vimeo" src="176894130" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     $.lazy('vimeo', function(element, response) {
         if (element[0].tagName.toLowerCase() === 'iframe') {
             // pass source to iframe
-            element.attr('src', 'https://player.vimeo.com/video/' + element.attr('data-src'));
+            element.attr('src', 'https://player.vimeo.com/video/' + element.attr('src'));
 
             // remove attribute
             if (this.config('removeAttribute')) {
-                element.removeAttr('data-src');
+                element.removeAttr('src');
             }
         }
 
@@ -585,16 +585,16 @@
  */
 ;(function($) {
     // load youtube video iframe, like:
-    // <iframe data-loader="yt" data-src="1AYGnw6MwFM" data-nocookie="1" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    // <iframe data-loader="yt" src="1AYGnw6MwFM" data-nocookie="1" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     $.lazy(['yt', 'youtube'], function(element, response) {
         if (element[0].tagName.toLowerCase() === 'iframe') {
             // pass source to iframe
             var noCookie = /1|true/.test(element.attr('data-nocookie'));
-            element.attr('src', 'https://www.youtube' + (noCookie ? '-nocookie' : '') + '.com/embed/' + element.attr('data-src') + '?rel=0&amp;showinfo=0');
+            element.attr('src', 'https://www.youtube' + (noCookie ? '-nocookie' : '') + '.com/embed/' + element.attr('src') + '?rel=0&amp;showinfo=0');
 
             // remove attribute
             if (this.config('removeAttribute')) {
-                element.removeAttr('data-src');
+                element.removeAttr('src');
             }
         }
 

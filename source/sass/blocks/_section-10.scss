@@ -1,0 +1,196 @@
+.section-10 {
+
+  .section-tagline {
+    margin-bottom: 32px;
+
+    @media (min-width: 576px) {
+       text-align: center;
+    }
+
+    @media (min-width: 992px) {
+      margin-bottom: 65px;
+    }
+  }
+
+  .explore-applications-row {
+    margin-bottom: 0;
+  }
+
+  .explore-applications-col {
+    margin-bottom: 27px;
+    padding-right: 0;
+    padding-left: 0;
+
+    @media (min-width: 576px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .card-body {
+    padding: 10px 15px 15px 15px;
+    box-shadow: 0 6px 8px rgba(164, 164, 164, 0.21);
+    border-radius: 6px;
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      padding: 38px 36px 35px 36px;
+    }
+  }
+
+  .card-title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -1.65px;
+    margin-bottom: 10%;
+
+    @media (min-width: 576px) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 21px;
+    }
+  }
+
+  .card-text {
+    opacity: 0.9;
+    max-width: 355px;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: -0.71px;
+    min-height: 52px;
+    margin-bottom: 100px;
+
+    @media (min-width: 576px) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 28px;
+    }
+  }
+
+  .explore-applications-button {
+    position: relative;
+    padding: 9px 10px 8px 22px;
+    min-width: 130px;
+    height: 34px;
+    box-shadow: 0 1px 2px rgba(100, 100, 100, 0.5);
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: $main-text-color;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    border: none;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 1px;
+      top: calc(50% - 2px);
+      left: 10px;
+      background-color: $main-text-color;
+      border-radius: 1px;
+      background-image: none;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 1px;
+      top: calc(50% + 3px);
+      left: 10px;
+      background-color: $main-text-color;
+      border-radius: 1px;
+      background-image: none;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .impact-tracking {
+    background-color: rgba(234, 76, 137, 0.9);
+    background-image: url('../img/section-10/impact-tracking.png');
+    background-size: 125px;
+    background-position: bottom 45px right 20px;
+
+    @media (min-width: 576px) {
+      background-size: 165px;
+      background-position: center right -13px;
+    }
+
+    @media (min-width: 768px) {
+      background-size: 230px;
+      background-position: center right 10%;
+    }
+
+    @media (min-width: 992px) {
+      background-size: 189px;
+      background-position: top 60px right -11px;
+    }
+
+    .explore-applications-button {
+      color: #e84f89;
+
+      &:hover {
+        background-color: #a02f5b;
+        color: #fff;
+
+        &::before, &::after {
+          background-color: #fff;
+        }
+      }
+
+      &::before, &::after {
+        background-color: rgba(234, 76, 137, 1);
+      }
+    }
+  }
+
+  .impact-markets {
+    background-color: rgba(147, 85, 222, 0.9);
+    background-image: url('../img/section-10/impact-markets.png');
+    background-size: 165px;
+    background-position: bottom 15px right -50px;
+
+    @media (min-width: 576px) {
+      background-size: 185px;
+      background-position: center right -25px;
+    }
+
+    @media (min-width: 768px) {
+      background-size: 220px;
+      background-position: center right 10%;
+    }
+
+    @media (min-width: 992px) {
+      background-size: 240px;
+      background-position: top 48px right -68px;
+    }
+
+    .explore-applications-button {
+      color: #9355de;
+
+      &:hover {
+        background-color: #5e3591;
+        color: #fff;
+
+        &::before, &::after {
+          background-color: #fff;
+        }
+      }
+
+      &::before, &::after {
+        background-color: rgba(147, 85, 222, 1);
+      }
+    }
+  }
+}

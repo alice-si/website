@@ -1,0 +1,137 @@
+.section-11 {
+
+  .section-title {
+    margin-bottom: 46px;
+  }
+
+  .technical-innovations-row {
+    @media (min-width: 1200px) {
+      margin-left: -44px;
+      margin-right: -44px;
+    }
+  }
+
+  .technical-innovations-col {
+    margin-bottom: 61px;
+    display: flex;
+    justify-content: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 576px) {
+      &:last-child, &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      margin-bottom: 61px !important;
+    }
+
+    @media (min-width: 1200px) {
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
+
+  .technical-innovations-card {
+    width: 80%;
+
+    @media (min-width: 576px) {
+      width: 90%;
+    }
+
+    @media (min-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  .card-img-wrapper {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+
+    @media (min-width: 576px) {
+      justify-content: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .card-body {
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #9354be;
+    margin-bottom: 19px;
+  }
+
+  .card-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6b7c93;
+    margin-bottom: 13px;
+    letter-spacing: 0;
+    max-width: 344px;
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+  }
+
+  .technical-innovations-link {
+    position: relative;
+    display: block;
+    margin-left: -5px;
+    color: #1cb8c4;
+    font-weight: 400;
+    letter-spacing: 0.59px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media (min-width: 576px) {
+      text-align: left;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &:hover {
+      color: #ae4aa0;
+      margin-left: 0;
+      transition: all 0.3s ease;
+
+      .technical-innovations-link__icon {
+        filter: hue-rotate(110deg);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .technical-innovations-link__icon {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    background-image: url('../img/section-11/link-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+  }
+}

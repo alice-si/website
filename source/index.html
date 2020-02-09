@@ -2,44 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Alice: Blockchain for good</title>
+  <title>Alice: the future of impact finance</title>
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A decentralised platform for the social finance sector">
-  <meta name="keywords" content="many, many, keywords">
+  <meta name="description" content="Alice is a financial platform for measurable impact projects. We help impact investors, governments and nonprofits fund projects with fully tracked impact data and low transaction costs.">
+  <meta name="keywords" content="impact finance, impact data, blockchain, distributed ledger technology, social tech">
   <link rel="stylesheet" href="css/lib/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/lib/picturefill.min.js"></script>
-  <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
-  <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
+  <!-- Webp support disabled, because it cases problems with inputs on IOS (text can't be typed in inputs) -->
+  <!-- <script src="https://unpkg.com/webp-hero@0.0.0-dev.24/dist-cjs/polyfills.js"></script>
+  <script src="https://unpkg.com/webp-hero@0.0.0-dev.24/dist-cjs/webp-hero.bundle.js"></script> -->
 
   <!-- Toastr -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>  <!-- jQuery is required for Toastr -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-  <!-- jquery.lazy -->
-  <script src="js/lib/jquery.lazy.min.js"></script>
-
-  <script>
-    $(function() {
-      $('[data-src]').attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');
-      // All the images are white before loading
-
-      // All images that have data-src attribute use easy loading
-      $('[data-src]').Lazy({
-        effect: 'fadeIn',
-        scrollDirection: 'vertical',
-        effectTime: 500,
-        visibleOnly: true
-      });
-    });
-  </script>
-
-  <script>
+  <!-- <script>
     var webpMachine = new webpHero.WebpMachine()
     webpMachine.polyfillDocument()
-  </script>
+  </script> -->
   <link rel="shortcut icon" href="img/favicon/favicon-old.png" type="image/x-icon">
 </head>
 <body>
@@ -47,6 +30,9 @@
   <header class="page-header main-header">
     <section class="section-1">
       <div class="wrapper">
+        <a class="header-top-banner d-none d-lg-block" href="#" target="_blank">
+          <img src="img/section-1/prize-banner.png" alt="Eic Horizon Prize" width="327" height="172">
+        </a>
         <div class="container-fluid px-0">
           <h1 class="visually-hidden section-title">Alice</h1>
           <nav class="navbar navbar-dark navbar-expand-lg">
@@ -85,15 +71,14 @@
           <div class="overview">
             <div class="row mx-0">
               <div class="col-md-6 col-lg-6 px-0">
-                <h2 class="overview-title">The future of impact finance.</h2>
+                <h2 class="overview-title">The future of impact finance</h2>
                 <p class="overview-tagline">
-                  Alice is a decentralised platform for the social finance sector.
-                  We help impact investors, governments and nonprofits to cut
-                  transaction costs and share verified impact data.
+                  Alice is a decentralised platform for the social finance sector. We help impact investors,
+                  governments and nonprofits to cut transaction costs and share verified impact data.
                 </p>
                 <div class="overview-buttons">
-                  <a href="#let-work-togehter" class="overview-button btn btn-success">Get started</a>
-                  <a href="https://donationsapp.alice.si" target="_blank" class="overview-button btn btn-light">Fund Projects</a>
+                  <a href="#let-work-togehter" class="overview-button overview-button--apps btn btn-success">Explore our apps</a>
+                  <!--<a href="https://donationsapp.alice.si" target="_blank" class="overview-button overview-button--funds btn btn-light">Fund Projects</a>-->
                 </div>
               </div>
               <div class="col-md-6 col-lg-6 d-flex px-0">
@@ -116,44 +101,44 @@
           <ul class="investors-and-media-list row justify-content-center justify-content-xl-between align-items-center align-content-lg-start">
             <li class="investor-and-media-item m-2">
               <a href="https://coinshares.co.uk/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo"  data-src="img/section-2/1.Coinshares.webp" width="150"
+                <img class="investor-ans-media-logo"  src="img/section-2/1.Coinshares.jpg" width="150"
                      height="55" alt="Coinshares">
                 <span class="visually-hidden investors-and-media-brand">Coinshares</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://www.impactassets.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo"  data-src="img/section-2/2.ImpactAssets_logo.webp" width="150" height="62" alt="ImpactAssets">
+                <img class="investor-ans-media-logo"  src="img/section-2/2.ImpactAssets_logo.png" width="150" height="62" alt="ImpactAssets">
                 <span class="visually-hidden investors-and-media-brand">Impact Assets</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://gnosis.io/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-2/3.Gnosis_logo.webp" width="81" height="49" alt="Gnosis">
+                <img class="investor-ans-media-logo" src="img/section-2/3.Gnosis_logo.png" width="81" height="49" alt="Gnosis">
                 <span class="visually-hidden investors-and-media-brand">Gnosis</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://www.gov.uk/government/organisations/innovate-uk" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-2/4.Innovateuk_logo.webp" width="176" height="34" alt="Innovateuk">
+                <img class="investor-ans-media-logo" src="img/section-2/4.Innovateuk_logo.png" width="176" height="34" alt="Innovateuk">
                 <span class="visually-hidden investors-and-media-brand">Innovate UK</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://socialtechtrust.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="svg/section-2/5.stt_logo.svg" width="66" height="64" alt="Social Tech Trust">
+                <img class="investor-ans-media-logo" src="svg/section-2/5.stt_logo.svg" width="66" height="64" alt="Social Tech Trust">
                 <span class="visually-hidden investors-and-media-brand">Social Tech Trust</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://bethnalgreenventures.com/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-2/6.BGV_logo.webp" width="125" height="39" alt="BGV">
+                <img class="investor-ans-media-logo" src="img/section-2/6.BGV_logo.png" width="125" height="39" alt="BGV">
                 <span class="visually-hidden investors-and-media-brand">Bethnal Green Ventures</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://www.vodafone.com/content/index.html" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-2/7.Vodafone_logo.webp" width="170" height="39" alt="Vodafone">
+                <img class="investor-ans-media-logo" src="img/section-2/7.Vodafone_logo.png" width="170" height="39" alt="Vodafone">
                 <span class="visually-hidden investors-and-media-brand">Vodafone</span>
               </a>
             </li>
@@ -171,21 +156,20 @@
           </h2>
 
           <p class="section-tagline">
-            Alice is a blockchain-based infrastructure that makes payments
-            conditional to verified impact. It allows anyone to create and
-            monetise transparent social funding applications.
-            Examples of applications built on Alice include:
+            Alice is a blockchain-based infrastructure that makes payments conditional
+            to verified impact. It allows anyone to create and monetise transparent
+            social funding applications. Examples of applications built on Alice include:
           </p>
 
           <div class="alice-application">
             <div class="row mx-0">
-              <div class="alice-application__image-col col-12 col-lg-7">
+              <div class="alice-application__image-col col-12 col-lg-8">
                 <div class="alice-application__wrapper">
-                  <img class="alice-application__image active" src="img/section-4/application-1.webp">
-                  <img class="alice-application__image" src="img/section-4/application-2.webp">
-                  <img class="alice-application__image" src="img/section-4/application-3.webp">
-                  <img class="alice-application__image" src="img/section-4/application-4.webp">
-                  <img class="alice-application__image" src="img/section-4/application-5.webp">
+                  <img class="alice-application__image active" src="img/section-4/application-1.png">
+                  <img class="alice-application__image" src="img/section-4/application-2.png">
+                  <img class="alice-application__image" src="img/section-4/application-3.png">
+                  <img class="alice-application__image" src="img/section-4/application-4.png">
+                  <img class="alice-application__image" src="img/section-4/application-5.png">
                 </div>
                 <div class="slider-bullets-wrapper">
                   <div class="slider-bullets-block">
@@ -197,7 +181,7 @@
                   </div>
                 </div>
               </div>
-              <div class="alice-application__advantages-col col-12 col-lg-5">
+              <div class="alice-application__advantages-col col-12 col-lg-4">
                 <ul class="alice-application__advantages">
                   <li class="alice-application__advantages-item active">
                     <p class="alice-application__advantages-text">Scalable Project Finance</p>
@@ -222,42 +206,35 @@
       </div>
     </section>
 
-    <section class="section-8">
+    <section class="section-10" id="explore-applications">
       <div class="wrapper">
         <div class="container-fluid px-0">
-          <h2 class="section-title">Our customers</h2>
-          <ul class="investors-and-media-list row justify-content-around align-items-center align-content-lg-start">
-            <li class="investor-and-media-item m-2">
-              <a href="https://www.mungos.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-8/1.Mungos_logo.webp" width="auto" height="60" alt="St Mungo’s">
-                <span class="visually-hidden investors-and-media-brand">St Mungo’s</span>
-              </a>
-            </li>
-            <li class="investor-and-media-item m-2">
-              <a href="https://forgottenanimals.org" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-8/2.FA_logo.webp" width="79" height="79" alt="Forgotten Animals">
-                <span class="visually-hidden investors-and-media-brand">Forgotten Animals</span>
-              </a>
-            </li>
-            <li class="investor-and-media-item m-2">
-              <a href="https://theaokc.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-8/3.AOKC_logo.webp" width="87" height="87" alt="AOKC">
-                <span class="visually-hidden investors-and-media-brand">AOKC</span>
-              </a>
-            </li>
-            <li class="investor-and-media-item m-2">
-              <a href="https://resonance.ltd.uk/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="svg/section-8/4.resonance_logo.svg" width="170" height="68" alt="Resonance">
-                <span class="visually-hidden investors-and-media-brand">Resonance</span>
-              </a>
-            </li>
-            <li class="investor-and-media-item m-2">
-              <a href="https://www.cancerresearchuk.org/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-8/5.CRUK_logo.webp" width="auto" height="50" alt="CRUK">
-                <span class="visually-hidden investors-and-media-brand">CRUK</span>
-              </a>
-            </li>
-          </ul>
+          <h2 class="section-title">Explore applications</h2>
+          <p class="section-tagline">
+            Visit some of the flagship public applications built on the Alice protocol.
+          </p>
+          <div class="explore-applications">
+            <div class="explore-applications-row row mx-0">
+              <div class="explore-applications-col col-12 col-lg-6">
+                <div class="card-body impact-tracking">
+                  <h5 class="card-title item-title">Impact Tracking</h5>
+                  <p class="card-text">
+                    Fund social projects and track what they achieve with your money.
+                  </p>
+                  <a href="#" class="explore-applications-button btn btn-success" target="_blank">Fund projects</a>
+                </div>
+              </div>
+              <div class="explore-applications-col col-12 col-lg-6">
+                <div class="card-body impact-markets">
+                  <h5 class="card-title item-title">Impact Markets</h5>
+                  <p class="card-text">
+                    Create fully transparent and decentralized impact investment markets.
+                  </p>
+                  <a href="#" class="explore-applications-button btn btn-success" target="_blank">Create markets</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -274,7 +251,7 @@
                 <a class="partner-link" href="https://gnosis.io/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" data-src="img/section-5/1.Gnosis_logo.webp" width="128" height="77" alt="Gnosis">
+                      <img class="card-image" src="img/section-5/1.Gnosis_logo.png" width="128" height="77" alt="Gnosis">
                     </div>
                   </div>
                   <div class="card-body">
@@ -290,7 +267,7 @@
                 <a class="partner-link" href="https://www.imperial.ac.uk/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" data-src="img/section-5/2.ICL_logo.webp" width="121" height="79" alt="ICL">
+                      <img class="card-image" src="img/section-5/2.ICL_logo.jpg" width="121" height="79" alt="ICL">
                     </div>
                   </div>
                   <div class="card-body">
@@ -308,7 +285,7 @@
                 <a class="partner-link" href="https://skalelabs.com/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" data-src="img/section-5/3.Skale_logo.webp" width="128" height="128" alt="Skale">
+                      <img class="card-image" src="img/section-5/3.Skale_logo.png" width="128" height="128" alt="Skale">
                     </div>
                   </div>
                   <div class="card-body">
@@ -324,7 +301,7 @@
                 <a class="partner-link" href="https://www.ashurst.com/" target="_blank">
                   <div class="card-img-wrapper">
                     <div class="partner-logo">
-                      <img class="card-image" data-src="img/section-5/5.Ashurst_logo.webp" width="129" height="100" alt="Ashurst">
+                      <img class="card-image" src="img/section-5/5.Ashurst_logo.png" width="129" height="100" alt="Ashurst">
                     </div>
                   </div>
                   <div class="card-body">
@@ -335,6 +312,123 @@
                   </div>
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-11" id="technical-innovations">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">
+            Technical innovations
+          </h2>
+          <div class="technical-innovations">
+            <div class="technical-innovations-row row">
+
+              <div class="technical-innovations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-innovations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-innovations-logo">
+                      <img class="card-image" src="img/section-11/etheroscope.png" width="65" height="65" alt="Gnosis">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Etheroscope</h5>
+                    <p class="card-text">
+                      The blockchain search engine for humans: visualise smart contract data in real-time with simple graphs.
+                    </p>
+                    <a class="technical-innovations-link" href="#" target="_blank">Etheroscope on our Github<span class="technical-innovations-link__icon"></span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="technical-innovations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-innovations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-innovations-logo">
+                      <img class="card-image" src="img/section-11/sensor.png" width="65" height="65" alt="Gnosis">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Sensor TRX</h5>
+                    <p class="card-text">
+                      Automated impact validation: use IoT, NFC and API oracles to verify the completion of impact goals.
+                    </p>
+                    <a class="technical-innovations-link" href="#" target="_blank">Sensor TRX on our Github<span class="technical-innovations-link__icon"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="technical-innovations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-innovations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-innovations-logo">
+                      <img class="card-image" src="img/section-11/tappy.png" width="65" height="65" alt="Gnosis">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Tappy</h5>
+                    <p class="card-text">
+                      Contactless wallets used for micro-incentive programs in environments that lack connectivity.
+                    </p>
+                    <a class="technical-innovations-link" href="#" target="_blank">Tappy on our Github<span class="technical-innovations-link__icon"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="technical-innovations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-innovations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-innovations-logo">
+                      <img class="card-image" src="img/section-11/predictions.png" width="65" height="65" alt="Gnosis">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Beneficiary predictions</h5>
+                    <p class="card-text">
+                      Mobile app allowing beneficiaries to feed back on the effectiveness of impact projects.
+                    </p>
+                    <a class="technical-innovations-link" href="#" target="_blank">Predictions on our Github<span class="technical-innovations-link__icon"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="technical-innovations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-innovations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-innovations-logo">
+                      <img class="card-image" src="img/section-11/delivery.png" width="65" height="65" alt="Gnosis">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Impact Delivery Agreements</h5>
+                    <p class="card-text">
+                      Powerful financial primitive that allows the transfer of future impact payments. Powers v2 of our protocol.
+                    </p>
+                    <a class="technical-innovations-link" href="#" target="_blank">Alice v2 on our Github<span class="technical-innovations-link__icon"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="technical-innovations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-innovations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-innovations-logo">
+                      <img class="card-image" src="img/section-11/delamp.png" width="65" height="65" alt="Gnosis">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">DeLAMP</h5>
+                    <p class="card-text">
+                      Smart legal contracting tool that automates the deployment of compliant blockchain services.
+                    </p>
+                    <a class="technical-innovations-link" href="#" target="_blank">DeLAMP on our Github<span class="technical-innovations-link__icon"></a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -395,6 +489,46 @@
       </div>
     </section>
 
+    <section class="section-8">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">Our customers</h2>
+          <ul class="investors-and-media-list row justify-content-around align-items-center align-content-lg-start">
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.mungos.org/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/1.Mungos_logo.jpg" width="auto" height="60" alt="St Mungo’s">
+                <span class="visually-hidden investors-and-media-brand">St Mungo’s</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://forgottenanimals.org" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/2.FA_logo.png" width="79" height="79" alt="Forgotten Animals">
+                <span class="visually-hidden investors-and-media-brand">Forgotten Animals</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://theaokc.org/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/3.AOKC_logo.png" width="87" height="87" alt="AOKC">
+                <span class="visually-hidden investors-and-media-brand">AOKC</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://resonance.ltd.uk/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="svg/section-8/4.resonance_logo.svg" width="170" height="68" alt="Resonance">
+                <span class="visually-hidden investors-and-media-brand">Resonance</span>
+              </a>
+            </li>
+            <li class="investor-and-media-item m-2">
+              <a href="https://www.cancerresearchuk.org/" class="investors-and-media-link" target="_blank">
+                <img class="investor-ans-media-logo" src="img/section-8/5.CRUK_logo.png" width="auto" height="50" alt="CRUK">
+                <span class="visually-hidden investors-and-media-brand">CRUK</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="section-7">
       <div class="wrapper">
         <div class="container-fluid px-0">
@@ -404,15 +538,21 @@
           <div class="row m-0">
             <div class="col-subscribition col-12 col-md-8 p-0">
               <h4 class="section-title new-and-community-title">Sign up to our newsletter</h4>
-              <form class="subscribition-form" onsubmit="return false">
+              <form
+                class="subscribition-form"
+                data-name="Email Form"
+                id="mc-embedded-subscribe-form"
+                action="//alice.us12.list-manage.com/subscribe/post?u=6f75f37dba1d873874416cd88&amp;id=3ddf423ed8"
+                method="post"
+                target="_blank"
+                name="mc-embedded-subscribe-form" >
 
                 <div class="input-wrapper">
-
                   <label class="email-label" for="email">Your email address</label>
-                  <input class="input-email" type="email" id="email">
+                  <input class="input-email" name="EMAIL" type="email" id="email">
                 </div>
                 <div class="submit-wrapper">
-                  <button onClick="signUpToNewsletter()" class="overview-button btn btn-success btn-submit">Sign up</button>
+                  <button type="submit" class="overview-button btn btn-success btn-submit">Sign up</button>
                 </div>
               </form>
             </div>
@@ -421,14 +561,14 @@
               <h4 class="section-title follow-us-title">Follow us</h4>
               <div class="row m-0 follow-us-icons">
                 <a class="follow-us-icon medium-icon" target="_blank" href="https://medium.com/alice-si">
-                  <img data-src="img/section-7/Medium_logo.webp" width="244" height="50" alt="Medium">
+                  <img src="img/section-7/Medium_logo.png" width="244" height="50" alt="Medium">
                   <span class="visually-hidden">
                         Medium
                       </span>
                 </a>
 
                 <a class="follow-us-icon twitter-icon" target="_blank" href="https://twitter.com/alice_si_">
-                  <img data-src="img/section-7/twitter_logo.webp" width="76" height="63" alt="Medium">
+                  <img src="img/section-7/twitter_logo.png" width="76" height="63" alt="Medium">
                   <span class="visually-hidden">
                         Twitter
                       </span>
@@ -448,48 +588,48 @@
 
             <li class="investor-and-media-item m-2">
               <a href="https://bitcoinmagazine.com/articles/bitcoin-and-blockchain-technology-future-philanthropy" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-6/1.Bitcoin_magazine_logo.webp" width="145" height="31" alt="Bitcoin magazine">
+                <img class="investor-ans-media-logo" src="img/section-6/1.Bitcoin_magazine_logo.png" width="145" height="31" alt="Bitcoin magazine">
                 <span class="visually-hidden investors-and-media-brand">Bitcoin magazine</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="https://www.standard.co.uk/tech/google-campus-london-residency-tech-for-good-a3941291.html" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-6/2.ES_logo.webp" width="230" height="30" alt="Evening Standard">
+                <img class="investor-ans-media-logo" src="img/section-6/2.ES_logo.png" width="230" height="30" alt="Evening Standard">
                 <span class="visually-hidden investors-and-media-brand">Evening Standard</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="https://www.nytimes.com/2017/11/06/business/bitcoin-charity-donations.html" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-6/3.New_York_Times_logo.webp" width="120" height="96" alt="The New York Times">
+                <img class="investor-ans-media-logo" src="img/section-6/3.New_York_Times_logo.jpg" width="120" height="96" alt="The New York Times">
                 <span class="visually-hidden investors-and-media-brand">The New York Times</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="https://www.huffingtonpost.co.uk/raphael-mazet/charitable-giving-app_b_10081744.html?guccounter=1" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-6/4.The_Huffington_Post_logo.webp" width="150" height="58" alt="The Huffington Post">
+                <img class="investor-ans-media-logo" src="img/section-6/4.The_Huffington_Post_logo.png" width="150" height="58" alt="The Huffington Post">
                 <span class="visually-hidden investors-and-media-brand">The Huffington Post</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="http://methods.sagepub.com/video/srmpromo/m0oxBt/using-blockchain-technology-for-transparent-social-funding-alice" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-6/5.Sage_rm_logo.webp" width="120" height="64" alt="Sage Research Methods">
+                <img class="investor-ans-media-logo" src="img/section-6/5.Sage_rm_logo.png" width="120" height="64" alt="Sage Research Methods">
                 <span class="visually-hidden investors-and-media-brand">Sage Research Methods</span>
               </a>
             </li>
 
             <li class="investor-and-media-item m-2">
               <a href="https://www.ibtimes.co.uk/ethereum-helping-londons-homeless-st-mungos-smart-contracts-1620724" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="img/section-6/6.IBT_logo.webp" width="140" height="62" alt="International Business Times">
+                <img class="investor-ans-media-logo" src="img/section-6/6.IBT_logo.png" width="140" height="62" alt="International Business Times">
                 <span class="visually-hidden investors-and-media-brand">International Business Times</span>
               </a>
             </li>
             <li class="investor-and-media-item m-2">
               <a href="https://blogs.msdn.microsoft.com/uk_faculty_connection/2018/02/19/etheroscope-a-smart-contract-visualiser/" class="investors-and-media-link" target="_blank">
-                <img class="investor-ans-media-logo" data-src="svg/section-6/7.ms_dev_logo.svg" width="151" height="32" alt="Microsoft Developer">
+                <img class="investor-ans-media-logo" src="svg/section-6/7.ms_dev_logo.svg" width="151" height="32" alt="Microsoft Developer">
                 <span class="visually-hidden investors-and-media-brand">Microsoft Developer</span>
               </a>
             </li>
@@ -509,14 +649,14 @@
           <div class="our-contacts row m-0">
             <div class="contacts-col col-6 col-md-3 col-xs-11 col-xs-offset-1">
               <p class="terms">
-                <a class="terms-links" href="https://s3.eu-west-2.amazonaws.com/alice-res/terms_of_use.pdf">Terms of Use</a>
-                <a class="terms-links" href="https://s3.eu-west-2.amazonaws.com/alice-res/privacy_policy.pdf">Privacy Policy</a>
-                <a class="terms-links" href="">© Alice SI Ltd</a>
+                <a class="terms-links" target="_blank" href="https://s3.eu-west-2.amazonaws.com/alice-res/terms_of_use.pdf">Terms of Use</a>
+                <a class="terms-links" target="_blank" href="https://s3.eu-west-2.amazonaws.com/alice-res/privacy_policy.pdf">Privacy Policy</a>
+                <span class="alice-copyright" >© Alice SI Ltd</span>
               </p>
             </div>
             <div class="contacts-col col-6 col-md-3 col-xs-11 col-xs-offset-1">
               <span class="contacts-title">Call us</span>
-              <a class="contacts-info" href="tel:+4402081239966">+44 (0) 20 8123 9966</a>
+              <a class="contacts-info" href="tel:+4402081239936">+44 (0) 20 8123 9936</a>
             </div>
             <div class="contacts-col col-6 col-md-3 col-xs-11 col-xs-offset-1">
               <span class="contacts-title">Email us</span>
@@ -580,9 +720,8 @@
   </div>
   <script src="js/lib/bootstrap.bundle.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script src="js/aliceManagement.min.js"></script>
+  <script src="js/aliceSlideshow.min.js"></script>
   <script src="js/send.min.js"></script>
-  <!-- <script src="js/lazy.min.js"></script> -->
 
 </body>
 </html>

@@ -39,37 +39,38 @@
   width: 100%;
 
   @media (min-width: 465px) {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 420px;
-    margin: 0 auto;
+  }
+
+  @media (min-width: 576px) {
+    display: flex;
+    //justify-content: space-around;
+    //flex-direction: column;
   }
 
   @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    width: 100%;
   }
 
   @media (min-width: 895px) {
     flex-direction: row;
-    width: 421px;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    //width: 421px;
+    justify-content: flex-start;
     margin: 0;
   }
 }
 
 .overview-button {
   width: 100%;
-
-  @media (min-width: 465px) {
-    width: 196px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  @media (min-width: 576px) {
-    width: 196px;
-  }
-
   min-height: 50px;
   margin-bottom: 28px;
   font-size: 21px;
@@ -79,12 +80,56 @@
   box-shadow: 0 2px 4px rgba(100, 100, 100, 0.5);
   border-radius: 4px;
   border: none;
+
+  @media (min-width: 465px) {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 32px;
+    width: 49%;
+  }
+
+  @media (min-width: 576px) {
+    width: 40%;
+  }
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 895px) {
+    width: 48.5%;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 21px;
+    line-height: 33px;
+    width: 196px;
+  }
+
+  &--apps {
+    @media (min-width: 576px) {
+      margin-right: 0 !important;
+    }
+
+    @media (min-width: 1200px) {
+      margin-right: 29px !important;
+      width: 252px;
+    }
+  }
+
+  &--funds {
+    @media (min-width: 576px) {
+
+    }
+  }
+
 }
 
 .btn-success {
   position: relative;
   padding-left: 43px;
-  padding-right: 19px;
+  padding-right: 15px;
   background-color: $secondary-color;
 
   @media (min-width: 576px) {
@@ -133,6 +178,7 @@
   @media (min-width: 575px) {
     display: flex;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   @media (min-width: 992px) {
@@ -146,16 +192,13 @@
     margin-left: 48px;
     width: 520px;
     height: 357px;
+    padding: 0;
   }
 }
 
 .overview-image {
   width: 100%;
   height: 100%;
-
-  @media (min-width: 465px) {
-    width: 420px;
-  }
 
   @media (min-width: 768px) {
     width: 100%;
